@@ -1,0 +1,41 @@
+h2{text-align:center;}
+
+	#gallery {
+		padding: 10px;
+		text-align: center;
+	}
+	#gallery div{
+		position: relative;
+	}
+	#gallery p{
+		font-size: 20px;
+		width: 300px;
+		font-family: "楷体";
+
+		margin:0;
+		background: #666;
+		-webkit-transition: opacity  0.5s;
+		opacity: 0.6;
+		color: white;
+		height: 30px;
+		line-height: 30px;
+	}
+	#gallery p:hover{
+		opacity: 1;
+	}
+	#gallery ul { list-style: none; }
+	#gallery ul li { display: inline; }
+	#gallery img{
+		margin-right: 30px;
+	}
+	#gallery ul a:hover { color: #fff; }
+
+	#lightbox-container-image-data-box {
+		box-sizing: content-box;
+	}
+	#container{
+		text-align: center;
+		margin: 50px auto;
+		width:100%;
+	}
+	
