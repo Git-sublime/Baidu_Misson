@@ -1,0 +1,156 @@
+html{
+	background: #Ccc;
+}
+
+body{
+	margin: 0;
+	padding:0;
+	min-width: 900px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px;
+	height: 100px;
+	background: -webkit-linear-gradient(right, #033, #fff);
+	min-width: 900px;
+}
+
+header a{
+	width: 170px;
+	height: 100px; 
+	float: left;
+}
+header a img{
+	width: 170px;
+	height: 100px; 
+}
+
+header nav ul{
+	list-style: none;
+	padding-right: 36px;
+	height: 25px;
+	padding-top:59px;
+}
+
+header nav ul li a{
+	float: right;	
+	display: block;
+	text-decoration: none;
+	width: 120px;
+	font-size: 20px;
+	height: 25px;
+	margin-right: 20px;
+	text-align: center;
+	background: -webkit-linear-gradient(top, #fff, #330);
+	border-radius: 7px 7px 0 0;
+	color: white;
+}
+
+header nav ul li a:hover{
+	height: 32px;
+	color: yellow;
+	margin-top: -7px;
+	line-height: 32px;
+	background: -webkit-linear-gradient(top, #fff, #033);
+}
+
+.aside{
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.content{
+	margin: 0 auto;
+	padding: 20px;
+	border:1px solid #999;
+	margin-bottom: 10px;
+	box-shadow: 5px 3px 3px #999;
+	background: white;
+}
+
+.table{
+	width: 98%;
+	border:1px solid #CCC;
+	margin: 0 auto;
+}
+
+.table .table_Head{
+	background: #666;
+	color: white;
+	font-weight: bold;
+}
+
+.table .table_Tail{
+	background: #CCC;
+}
+
+.Warning{
+	bottom:2px;
+	color: #666;
+}
+
+input{
+	height: 22px;
+	border:1px solid #666;
+}
+
+table{
+	margin: 0 auto;
+}
+
+table caption{
+	font-size: 22px;
+	font-weight: bold;
+}
+button{
+	font-size: 20px;
+	font-weight: bold;
+	width: 290px;
+	height:40px;
+	margin-left: 10px;
+	background: blue;
+	border-radius: 8px;
+}
+
+footer{
+	background: #000;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+}
+
+footer p{
+	font-size: 22px;
+	text-align: center;
+	line-height: 50px;
+	color:#999;
+}
+
+#total{
+	margin-top: 130px;
+	height: 2380px;
+	min-width: 1000px;
+}
+
+article{
+	margin-top: 130px;
+	background-color: #FFF;
+	margin-left: 40px;
+	margin-right: 450px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 2px #848484;
+}
+
+aside{
+	background: #fff;
+	float: right;
+	width: 350px;
+	margin-top: 0px;
+	margin-right: 20px;
+	padding: 20px;
+	box-shadow: 5px 5px 3px #848484;
+}

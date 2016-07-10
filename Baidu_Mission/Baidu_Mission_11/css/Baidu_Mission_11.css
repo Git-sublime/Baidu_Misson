@@ -1,0 +1,191 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#F5F5F5; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+/*全栈样式初始化代码*/
+
+header{
+	height: 70px;
+	background: #91D4DA;
+	color: white;
+}
+p{
+	margin-bottom: 0;
+}
+.return{
+	height: 100%;
+	display: inline-block;
+	float: left;
+	line-height: 70px;
+	padding-left: 20px;
+	font-size: 25px;
+	cursor: pointer;
+}
+header>h1{
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 25px;
+	padding-right: 104px;
+}
+ul{
+	list-style: none;
+}
+ul li{
+	text-decoration: none;
+	display: block;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+/*================主体部分Main*/
+.Main{
+	width: 1000px;
+	margin: 0 auto;
+	background: white;
+}
+@media (max-width: 1000px) {
+	.Main{
+		width: 100%;
+	}
+	.img1{
+		width: 100%;
+	}
+}
+.nav{
+	height: 70px;
+}
+.nav>li{
+	width: 20%;
+	line-height: 65px;
+	font-size: 18px;
+}
+.active{
+	border-bottom: 5px solid #91D4DA;
+}
+
+/*==========标签栏label*/
+.label{
+	display: block;
+	padding: 30px 0 20px 0;
+}
+.label ul{
+	clear: both;
+	height: 130px;
+	margin: 0 30px;
+	border-bottom: 1px solid #ddd;
+}
+.label ul li{
+	width: 20%;
+	height: 110px;
+
+}
+.label ul li>p{
+	height: 30px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	font-size: 16px;
+	color: #555;
+}
+
+/*==================分栏页subfield*/
+.subfield{
+	height: 280px;
+	padding: 20px 0;
+}
+.subfield li{
+	width: 33.3%;
+	height: 240px;
+	text-align: center;
+}
+.subfield li .sub{
+	font-size: 25px;
+	color: black;
+}
+.subfield li .caption{
+	font-size: 18px;
+	color: #555;
+}
+.Rline{
+	border-right: 1px solid #ddd;
+}
+
+/*====================版块1model*/
+.model{
+	margin-top: 20px;
+	border-top: 20px solid #F5F5F5;
+	padding: 10px 30px;
+}
+.model>h1{
+	height: 60px;
+	line-height: 60px;
+	font-size: 28px;
+	color: #333;
+	border-bottom: 1px solid #ddd;
+}
+.model table{
+	width: 100%;
+	margin-top: 20px;
+}
+.model table tr td{
+	width: 30%;
+	text-align: center;	
+}
+.row2{
+	border-top: 20px solid white;
+}
+.office{
+	background: #f5f5f5;
+	width: 90%;
+	margin: 0 auto;
+	height: 100px;
+	line-height: 100px;
+	border-radius: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/*=============文章textBox*/
+.textBox{
+	padding: 20px;
+	float: left;
+	background: white;
+	width: 100%;
+}
+.textBox_1{
+	border-top: 20px solid #f5f5f5;
+}
+.textBox_2{
+	border-top: 7px solid #f5f5f5;
+}
+.textBox_3{
+	border-top: 7px solid #f5f5f5;
+}
+.textBox>img{
+	float: left;
+}
+.textBox>p{
+	display: block;
+	text-indent: 20px;
+}
+.text1{
+	font-size: 22px;
+	color: #111;
+}
+.text2{
+	font-size: 16px;
+	color: #777;
+	margin-top: 140px;
+}
+.textBox_3 ul li{
+	width: 33.3%;
+	margin: 20px 0;
+}

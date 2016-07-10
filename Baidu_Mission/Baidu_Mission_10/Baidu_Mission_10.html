@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Baidu_Mission_10</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 20px;
+		}
+		.flex-container{
+			margin: 0;
+			border:1px solid #666;
+			list-style: none;
+			padding: 20px;
+			box-sizing: border-box;
+			display: flex;	/*flex布局*/
+			flex-wrap: nowrap;	/*伸缩容器里是单行显示*/
+			justify-content: space-between;	/*容器里内容第一个靠左最后一个靠最右其他均匀分布*/
+			align-items: center;	/*内容已容器的高为中线高度居中对齐*/
+		}
+		@media (max-width: 640px) {
+			.flex-container{
+				flex-wrap: wrap;	/*多行显示*/
+				justify-content: space-start;	/*内容正常向左排列*/
+				align-items: flex-start;	/*高度方向正常向上对齐*/
+			}
+			.item4{
+				order: -1;	/*最后一个的位置放到第一个*/
+			}
+		}
+		.flex-item{
+			width: 150px;
+			text-decoration: none;
+			display: block;
+			margin: 10px 0;
+			border:1px solid red;
+			box-sizing: border-box;
+		}
+		.item1{
+			height: 120px;
+		}
+		.item2{
+			height: 100px;
+		}
+		.item3{
+			height: 40px;
+		}
+		.item4{
+			height: 200px;
+			border:1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<ul class="flex-container">
+		<li class="flex-item item1"></li>
+		<li class="flex-item item2"></li>
+		<li class="flex-item item3"></li>
+		<li class="flex-item item4"></li>
+	</ul>
+</body>
+</html>

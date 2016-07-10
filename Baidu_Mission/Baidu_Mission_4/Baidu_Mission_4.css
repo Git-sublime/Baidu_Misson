@@ -1,0 +1,28 @@
+.main_Body{
+	width: 400px;
+	height: 200px;
+	background: #CCC;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:-100px 0 0 -200px;
+}
+
+.left_Top{
+	/*position: absolute;*/
+	margin: 0px 350px 150px 0px;
+	width: 50px;
+	height: 50px;
+	background: yellow;
+	border-radius: 0 0 100% 0;
+	float:left;
+}
+
+.right_Bottom{
+	position: absolute;
+	margin: 150px 0 0 350px;
+	width: 50px;
+	height: 50px;
+	background: yellow;
+	border-radius: 50px 0 0 0;
+}
