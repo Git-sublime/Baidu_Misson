@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" width=device-width>
+	<title>Baidu_Mission_11</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/Baidu_Mission_11.css">
+</head>
+<body>
+	<header>
+		<p class="return">
+			<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+			返回
+		</p>	
+		<h1>超萌小浣熊</h1>
+	</header>
+	
+	<section class="Main">
+		<ul class="nav">
+			<li name="naver">导航一</li>
+			<li name="naver" class="active">导航二</li>
+			<li name="naver">导航三</li>
+			<li name="naver">导航四</li>
+			<li name="naver">导航五</li>
+		</ul>	<!-- nav -->
+
+		<img src="images/bear-figure.png" width="1000px" class="img1">
+
+		<div class="label">
+			<ul>
+				<li>
+					<img src="images/label.png" width="80px">
+					<p>标签</p>
+				</li>
+				<li>
+					<img src="images/label.png" width="80px">
+					<p>标签</p>
+				</li>
+				<li>
+					<img src="images/label.png" width="80px">
+					<p>标签</p>
+				</li>
+				<li>
+					<img src="images/label.png" width="80px">
+					<p>标签</p>
+				</li>
+				<li>
+					<img src="images/label.png" width="80px">
+					<p>标签</p>
+				</li>	
+			</ul>
+		</div>	<!-- label -->
+
+		<ul class="subfield">
+			<li class="Rline">
+				<img src="images/img_03.png">
+				<p class="sub">分栏一</p>
+				<p class="caption">分栏小标题</p>
+			</li>
+			<li class="Rline">
+				<img src="images/img_05.png">
+				<p class="sub">分栏二</p>
+				<p class="caption">分栏小标题</p>
+			</li>
+			<li>
+				<img src="images/img_07.png" height="180px">
+				<p class="sub">分栏三</p>
+				<p class="caption">分栏小标题</p>
+			</li>
+		</ul>	<!-- subfield -->
+
+		<div class="model model_1">
+			<h1>模块一</h1>
+			<table>
+				<tr>
+					<td rowspan="2"><img src="images/img_16.png"></td>
+					<td><p class="office">这是文案</p></td>
+					<td><p class="office">这是文案</p></td>
+				</tr>
+				<tr>
+					<td><p class="office">这是文案</p></td>
+					<td><p class="office">这是文案</p></td>
+				</tr>
+				<tr class="row2">
+					<td rowspan="2"><img src="images/img_16.png"></td>
+					<td><p class="office">这是文案</p></td>
+					<td><p class="office">这是文案</p></td>
+				</tr>
+				<tr>
+					<td><p class="office">这是文案</p></td>
+					<td><p class="office">这是文案</p></td>
+				</tr>
+			</table>
+		</div>	<!-- model_1 -->
+
+		<div class="model model_2">
+			<h1>模块二</h1>
+			<table>
+				<tr>
+					<td rowspan="2"><img src="images/img_16.png"></td>
+					<td><p class="office">这是文案</p></td>
+					<td><p class="office">这是文案</p></td>
+				</tr>
+				<tr>
+					<td><p class="office">这是文案</p></td>
+					<td><p class="office">这是文案</p></td>
+				</tr>
+				<tr class="row2">
+					<td rowspan="2"><img src="images/img_16.png"></td>
+					<td><p class="office">这是文案</p></td>
+					<td><p class="office">这是文案</p></td>
+				</tr>
+				<tr>
+					<td><p class="office">这是文案</p></td>
+					<td><p class="office">这是文案</p></td>
+				</tr>
+			</table>
+		</div>	<!-- model_2 -->
+
+		<div class="textBox textBox_1">
+			<img src="images/img_19.png">
+			<p class="text1">这是文章标题字号是22的文章标题</p>
+			<p class="text2">文章来源 6分钟前</p>
+		</div>	<!-- textBox_1 -->
+
+		<div class="textBox textBox_2">
+			<img src="images/img_19.png">
+			<p class="text1">这是文章标题字号是22的文章标题</p>
+			<p class="text2">文章来源 7分钟前</p>
+		</div>	<!-- textBox_2 -->
+
+		<div class="textBox textBox_3">
+			<p class="text1">这是文章标题字号是22的文章标题</p>
+			<ul>
+				<li><img src="images/img_19.png"></li>
+				<li><img src="images/img_19.png"></li>
+				<li><img src="images/img_19.png"></li>
+			</ul>
+			<p class="text2">文章来源 9分钟前</p>
+		</div>	<!-- textBox_3 -->
+	</section>
+</body>
+<script type="text/javascript">
+	window.onload=function(){
+		var navbar=document.getElementsByName("naver");
+		for(var i=0;i<navbar.length;i++){
+			navbar[i].onmouseover=function(){
+				for(var j=0;j<navbar.length;j++){
+					navbar[j].className="";	
+				}
+				this.className="active";
+			}	
+		}
+	}
+</script>
+</html>

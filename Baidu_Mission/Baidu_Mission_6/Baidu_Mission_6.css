@@ -1,0 +1,372 @@
+body{
+  min-width: 800px;
+  margin: 0;
+  padding:0;
+  background: #999;
+}
+
+.mainbody{
+  width:1000px;
+  /*min-height:500px;*/
+  height: 1400px;
+  background: white;
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+  font-family: "楷体";
+  position: relative;
+}
+/*报纸头部==============================================================================*/
+
+header{
+  height:60px;
+  border-bottom: 2px solid #666;
+  position: relative;
+  margin-bottom: 30px;
+}
+.header_left{
+  width: 100px;
+  height:60px;
+  background: rgba(255, 0, 0, 0.6);
+}
+.header_left span{
+  display: inline-block;
+  font-size: 14px;
+  color: white; 
+  margin-top: 40px;
+  margin-left: 2px;  
+}
+header>span{
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  top: 40px;
+  right: 2px;
+  color: rgba(255, 0, 0, 0.5); 
+}
+/*侧边栏========================================================================================*/
+
+aside{
+  width: 220px;
+  border-top: 4px solid rgba(200, 50, 255, 0.8);
+  float: right;
+  height: 334px;
+  position: relative;
+}
+aside .About{
+  text-decoration: underline;
+  font-variant: small-caps;/*====================英文字母小型大写*/
+  text-transform: capitalize;/*========================首字母大写*/
+  font-size: 24px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+  /*font-family: "微软雅黑";*/
+}
+aside .content{
+  color:#666;
+  font-size: 14px;
+}
+aside .seven{
+  font-size: 120px;
+  margin:0px;
+  color: rgba(50, 50, 255, 0.8);
+  padding-left: 0px;
+}
+aside .num{
+  display: inline-block;
+  font-size: 55px;
+  color: rgba(200, 50, 255, 0.8);
+  margin: 0;
+  font-family: "微软雅黑";
+}
+aside .upper_css{
+  /*display: inline-block;*/
+  color: rgba(200, 50, 255, 0.8);
+  font-size: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 80px;
+  font-family: "微软雅黑";
+}
+aside .lower_css{
+  /*display: inline-block;*/
+  color:#666;
+  position: absolute;
+  left: 80px;
+  bottom: 0;
+  font-family: "微软雅黑";
+}
+/*左边正文图片============================================================*/
+
+article{
+  margin-right: 290px;
+}
+.ar_img{
+  width: 710px;
+  height: 325px;
+  background-image: url(http://yuanguangxin.github.io/Baidu_ife/mission1_6/img/pic1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.ar_left{
+  width: 200px;
+  height: 325px;
+  float: left;
+  background: rgba(0,150,0,0.2);
+}
+.ar_right{
+  width: 200px;
+  height: 325px;
+  float: right;
+  background: rgba(150,0,0,0.2);
+}
+/*中间文本============================================================*/
+
+section{
+  height: 250px;
+  margin-top: 30px;
+  position: relative;
+}
+section div{
+  height: 250px;
+  width: 200px;
+}
+section .Left{
+  position: absolute;
+  left: 0;
+}
+section .Center{
+  position: absolute;
+  left: 230px;
+}
+section .Right{
+  position: absolute;
+  left: 460px;
+}
+section .Left h3{
+  margin:0;
+  text-decoration: underline;
+  color: #418c59;
+}
+section .Left p{
+  color:rgba(0,0,0,0.7);
+  font-family: "宋体";
+  line-height: 16px;
+}
+section .Center h3{
+  margin:0;
+  text-decoration: underline;
+  color: #d2994f;
+}
+section .Center p{
+  color:rgba(0,0,0,0.7);
+  font-family: "微软雅黑";
+  line-height: 16px;
+}
+section .Right h3{
+  margin:0;
+  text-decoration: underline;
+  color: #d2994f;
+}
+section .Right p{
+  color:rgba(0,0,0,0.9);
+  font-family: "微软雅黑";
+  line-height: 16px;
+}
+section .Right .percentage{
+  margin:0;
+  line-height: 20px;
+}
+section .Right em{
+  color: #cd4a48;
+}
+/*下面侧边栏——左边==================================================================================*/
+
+.aside{
+  /*border:1px solid blue;*/
+  width: 480px;
+  height: 630px;
+  margin-top: 40px;
+  float: left;
+  position: relative;
+}
+.aside p{
+  margin: 0;
+}
+.aside .the{
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 70px;
+  color: yellow;
+  font-weight: bold;
+}
+.aside .loge{
+  text-transform: uppercase;
+  color: #11456b;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "黑体";
+}
+.aside .B{
+  display: inline-block;
+  /*position: absolute;*/
+  float: left;
+  font-size: 70px;
+  color: yellow;
+  font-family: "微软雅黑";
+}
+.aside .B_content{
+  margin-top: 16px;
+}
+.aside .L_img{
+  float: right;
+  width: 167px;
+  height: 288px;
+  right: 0px;
+  border-top:5px solid white;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+}
+/*下面正文——右边====================================================================================*/
+
+.article{
+  /*border:1px solid red;*/
+  width: 480px;
+  height: 630px;
+  float: right;
+  margin-top: 40px;
+}
+/*上面图片部分=============================================================*/
+.article .img{
+  width: 480px;
+  height: 270px;
+  background-image: url(http://yuanguangxin.github.io/Baidu_ife/mission1_6/img/pic2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+}
+.img_foot{
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  height: 70px;
+  background:rgba(0,0,0,0.4);
+  padding: 0 40px;
+}
+.img_foot p{
+  margin: 0;
+  height: 70px;
+  line-height: 70px;
+}
+.img_foot .p_l{
+  color: #72b16a;
+  font-size: 50px;
+}
+.img_foot .p_text1{
+  color: white;
+  font-size: 30px;
+  font-family: "微软雅黑";
+}
+.img_foot .p_text2{
+  color: #72b16a;
+  font-family: "微软雅黑";
+  font-style: italic;
+}
+/*下面文本部分=====(上)===================================================================*/
+.article .content{
+  background: rgba(255,192,203,0.4);
+  width: 480px;
+  height: 320px;
+  margin-top: 40px;
+}
+.con_up{
+  margin-bottom: 30px;
+}
+.con_up li{
+  line-height: 40px;
+  font-family: "微软雅黑";
+}
+.con_up li em{
+  font-size: 12px;
+}
+/*下面文本部分=====(下)====(左)===============================================================*/
+.con_down .do_aside{
+  width: 250px;
+  height: 144px;
+  background: rgba(200,80,80,1);
+  float: left;
+  padding: 10px;
+   font-family: "微软雅黑";
+}
+.do_0{
+  font-size: 110px;
+  color: white;
+}
+.do_text{
+  width: 178px;
+  height: 88px;
+  float: right;
+  border-left:2px solid white;
+  margin:28px 0px;
+
+}
+.do_text p{
+  margin: 0;
+  padding-left: 5px;
+}
+.do_one{
+  font-style: italic;
+  font-size: 19px;
+  color: white;
+}
+.do_hello{
+  color: white;
+  font-size: 12px;
+}
+
+/*下面文本部分=====(下)====(右)===============================================================*/
+.con_down .do_article{
+  width: 200px;
+  height: 164px;
+  /*border:1px solid red;*/
+  float: right;
+}
+.do_article{
+  position: relative;
+}
+.p1{
+  font-size: 80px;
+  color: rgba(200,80,80,1);
+  font-family: "黑体";
+  font-style: normal;
+  position: absolute;
+  top:0;
+  right: 160px;
+}
+.p2{
+  font-size: 80px;
+  color: rgba(200,80,80,1);
+  font-family: "黑体";
+  font-style: normal;
+  position: absolute;
+  bottom:0;
+  left: 140px;
+}
+.do_article em{
+  line-height: 20px;
+  color: rgba(0,0,0,0.8);
+}
+/*尾部=====================================================================*/
+
+footer{
+ height: 40px;
+ width: 1000px;
+ border-top:2px solid rgba(0,0,0,0.3);
+ position: absolute;
+ bottom: 0;
+}
+footer span{
+  display: inline-block;
+  float: right;
+  color:rgba(200,80,80,1);
+}

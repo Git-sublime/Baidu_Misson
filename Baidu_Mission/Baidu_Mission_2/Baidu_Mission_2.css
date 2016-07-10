@@ -1,0 +1,113 @@
+body{
+	margin: 0;
+	padding:0;
+	min-width: 1000px;
+}
+
+header{
+	border-bottom: 1px;
+	box-shadow: 0px 2px 2px black;
+	height: 100px;
+}
+
+header a{
+	width: 170px;
+	height: 100px; 
+	float: left;
+}
+header a img{
+	width: 170px;
+	height: 100px; 
+}
+
+header nav ul{
+	list-style: none;
+	padding-right: 36px;
+	height: 25px;
+	padding-top:75px;
+}
+
+header nav ul li a{
+	float: right;	
+	display: block;
+	text-decoration: none;
+	width: 120px;
+	font-size: 20px;
+	height: 25px;
+	margin-right: 20px;
+	text-align: center;
+	background: -webkit-linear-gradient(top, #fff, #330);
+	border-radius: 7px 7px 0 0;
+	color: white;
+}
+
+header nav ul li a:hover{
+	height: 32px;
+	color: orange;
+	margin-top: -7px;
+	line-height: 32px;
+	background: -webkit-linear-gradient(top, #fff, #033);
+}
+
+.content{
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	border:1px solid #CCC;
+	margin-top: 10px;
+	box-shadow: 2px 3px 3px #CCC;
+}
+
+.table{
+	width: 98%;
+	border:1px solid #CCC;
+	margin: 0 auto;
+}
+
+.table td{
+	border:1px solid #CCC;
+}
+.table .table_Head{
+	background: #666;
+	color: white;
+	font-weight: bold;
+}
+
+.table .table_Tail{
+	background: #CCC;
+}
+
+.Warning{
+	padding-left: 138px;
+	color: #666;
+}
+
+.check_box{ margin-left: 80px; }
+
+.text_area{ margin-left: 48px; }
+
+button{
+	font-size: 20px;
+	font-weight: bold;
+	width: 500px;
+	height:40px;
+	margin-left: 133px;
+	background: green;
+	border-radius: 8px;
+}
+
+.text_box{
+	padding-left: 100px;
+}
+
+footer{
+	background: #666;
+	height: 60px;
+	width: 100%;
+}
+
+footer p{
+	font-size: 22px;
+	text-align: center;
+	padding-top: 20px;
+}
