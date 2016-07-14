@@ -1,0 +1,141 @@
+body{
+	padding:50px 0 0 0;
+}
+.container{
+	padding: 0;
+}
+.carousel {
+ 	height: 550px;
+}
+.carousel .item {
+ 	height: 550px;
+}
+.carousel .item img {
+ 	width: 100%;
+}
+.center{
+	text-align: center;
+	margin-top: 50px;
+}
+.mac{
+	font-size: 25px;
+	font-weight: bold;
+}
+.text1{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.signIn{
+	float: right;
+	height: 30px;
+	margin-top: 10px;
+	color: #999;
+	cursor: pointer;
+}
+.signIn:hover{
+	color: #fff;
+}
+.signIn .iUser{
+	line-height: 29px;
+	font-size: 16px;
+}
+.signIn .sign-text{
+	line-height: 28px;
+	font-size: 15px;
+	margin-left: 5px;
+}
+.search{
+	height: 30px;
+	float: right;
+	margin-top: 10px;
+	color: #999;
+	margin-right: 20px;
+}
+.search>span{
+	font-size: 18px;
+	line-height: 27px;
+	margin-top: 1px;
+	float: left;
+	margin-right: 10px;
+}
+.search>span:hover{
+	color:#fff;
+}
+.search>input{
+	color: #fff;
+	width: 0px;
+	height: 29px;
+	border: none;
+	float: right;
+	background: #222;
+	font-size: 17px;
+	outline: none;
+	-webkit-transition:all .3s;
+	-ms-transition:all .3s;
+	-o-transition:all .3s;
+}
+.search .ifocus{
+	width: 200px;
+	border-bottom: 1px solid #ccc;
+}
+
+/*<!-- 三列布局============= -->*/
+.center img{
+	width: 150px;
+}
+.browser{
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.center p{
+	padding: 0 10px;
+}
+.hr1{
+	margin: 40px 0;
+}
+.btn-download{
+	-webkit-transition:all .1s;
+	-ms-transition:all .1s;
+	-o-transition:all .1s;
+}
+.btn-download:hover{
+	background: #428bca;
+	color: #fff;
+	border: 1px solid #428bca;
+}
+
+/*<!-- 标签列表导航(Apple 产品介绍) -->*/
+.six_s,.iPad{
+	height: 400px;
+}
+.Mac{
+	height: 240px;
+	margin: 80px 0;
+}
+.new-mac{
+	border: 1px solid #f46c0e;
+	color: #f46c0e;
+	padding: 3px 10px;
+}
+.new-mac:hover{
+	background:none;
+	color: #f46c0e; 
+	border: 1px solid #f46c0e;
+}
+.ipad{
+	padding-top: 100px;
+	text-align: center;
+}
+.ipad a{
+	display: block;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.ipad-text1{
+	font-size: 50px;
+}
+.ipad-text2{
+	font-size: 25px;
+	margin-bottom: 5px;
+}
