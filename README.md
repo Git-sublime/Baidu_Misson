@@ -1,4 +1,3 @@
-UI-design
 
 Bootstrap: http://git-sublime.github.io/UI-design/Bootstrap/demo.html
 
