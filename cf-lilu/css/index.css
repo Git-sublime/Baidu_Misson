@@ -5,7 +5,8 @@ body{
 }
 header{
 	height: 95px;
-	background-color:#282828; 
+	background-color:#282828;
+	border-bottom:1px solid #282828;
 }
 .container{
 	width: 1100px;
