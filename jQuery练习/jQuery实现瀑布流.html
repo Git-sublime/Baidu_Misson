@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery实现照片瀑布流</title>
+	<link rel="stylesheet" type="text/css" href="css/waterFall.css">
+</head>
+<body>
+	<header>
+		Beautiful southern girl
+		<nav>
+			<ul>
+				<li><a href="JS实现瀑布流.html">JS</a></li>
+				<li><a href="jQuery实现瀑布流.html">jQuery</a></li>
+				<li><a href="CSS实现瀑布流.html">CSS</a></li>			
+			</ul>
+		</nav>
+	</header>
+	<div id="main">
+		<div class="box">
+			<div class="pic">
+				<img src="images/1.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/2.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/3.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/4.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/5.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/6.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/7.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/8.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/9.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/10.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/11.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/12.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/13.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/14.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/15.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/16.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/17.JPG">
+			</div>
+		</div>
+		<!-- <div class="box">
+			<div class="pic">
+				<img src="images/18.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/19.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/20.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/21.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/22.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/23.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/24.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/25.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/26.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/27.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/28.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/29.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/30.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/31.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/32.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/33.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/34.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/35.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/36.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/37.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/38.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/39.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/40.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/41.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/42.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/43.JPG">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic">
+				<img src="images/44.JPG">
+			</div>
+		</div> -->
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	//瀑布流原理，第二排以及后面的照片，要依次定位在前面一排的最矮的照片后面
+	$(window).on('load',function(){
+		waterfall();
+		
+		var dataInt={"data":[{"src":"18.JPG"},{"src":"19.JPG"},{"src":"20.JPG"},{"src":"21.JPG"},{"src":"22.JPG"},{"src":"23.JPG"},{"src":"24.JPG"},{"src":"25.JPG"},{"src":"26.JPG"},{"src":"27.JPG"},{"src":"28.JPG"},{"src":"29.JPG"},{"src":"30.JPG"},{"src":"31.JPG"},{"src":"32.JPG"},{"src":"33.JPG"},{"src":"34.JPG"},{"src":"35.JPG"},{"src":"36.JPG"},{"src":"37.JPG"},{"src":"38.JPG"},{"src":"39.JPG"},{"src":"40.JPG"},{"src":"41.JPG"},{"src":"42.JPG"},{"src":"43.JPG"},{"src":"44.JPG"},{"src":"0.JPG"},{"src":"1.JPG"},{"src":"2.JPG"},{"src":"3.JPG"},{"src":"4.JPG"},{"src":"5.JPG"},{"src":"6.JPG"},{"src":"7.JPG"},{"src":"8.JPG"},{"src":"9.JPG"},{"src":"10.JPG"},{"src":"11.JPG"},{"src":"12.JPG"},{"src":"13.JPG"},{"src":"14.JPG"},{"src":"15.JPG"},{"src":"16.JPG"},{"src":"17.JPG"}]};
+		$(window).on('scroll',function(){
+			if(checkScroll){
+				$(dataInt.data).each(function(index,value){
+					var oBox=$("<div>").addClass("box").appendTo($("#main"));
+					var oPic=$("<div>").addClass("pic").appendTo(oBox);
+					var oImg=$("<img>").attr("src","images/"+$(value).attr("src")).appendTo(oPic);
+				})
+				waterfall();
+			}
+		})	
+	})
+	
+	function waterfall(){
+		var $Boxs=$("#main").children(".box");//获取每个box盒子
+		var BoxWidth=$Boxs.eq(0).outerWidth();//获取盒子的宽度outerWidth()获取连padding;注意：jQuery对象才能使用jQuery的函数，用$()转换
+		var bodyWidth=$(document).width();
+		var cols=Math.floor(bodyWidth/BoxWidth);
+		$("#main").width(cols*BoxWidth).css('margin','0 auto');
+		// console.log(BoxWidth);
+		var Harr=[];//新建用来存放每列现有的高度数组Harr
+		//遍历每个盒子
+		$Boxs.each(function(index,value){
+			var h=$Boxs.eq(index).outerHeight();
+			//先把第一列每个元素的高度存入Harr数组中
+			if(index<cols){
+				Harr.push(h);
+			}else{
+				//给box设置绝对定位
+				$Boxs.eq(index).css('position','absolute');
+				//获取最小高度和它的索引
+				var minH=Math.min.apply(null,Harr);
+				var minHindex=$.inArray(minH,Harr);
+				//给下一个box设置top、left值
+				$Boxs.eq(index).css({
+					'top':minH,
+					'left':minHindex*BoxWidth
+				})
+				//更新Harr数组
+				Harr[minHindex]+=$Boxs.eq(index).outerHeight();
+			}
+		})
+	}
+
+	function checkScroll(){
+		var $lastBox=$("#main>div").last();
+		var lastBoxH=$lastBox.offset().top+Math.floor($lastBox.outerHeight()/2);
+		var scrollTop=$(window).scrollTop();
+		var documentH=$(window).height();
+		console.log(scrollTop);
+		return (lastBoxH<scrollTop+documentH)?true:false;
+	}
+</script>
+</html>

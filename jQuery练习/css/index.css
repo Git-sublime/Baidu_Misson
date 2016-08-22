@@ -1,0 +1,29 @@
+.container{
+	/*height: 200px;*/
+}
+.btn-hide{
+	margin-top: 20px;
+}
+.hidebox,.animate,.css,.create{
+	width: 200px;
+	height: 100px;
+	border:1px solid #ccc;
+	margin-top: 5px;
+	padding:5px;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #666;
+}
+.create{
+	display: inline-block;
+	margin-right: 10px;
+}
+.add{
+	background: #ddd;
+	color:#f00;
+}
+button{
+	outline: none;
+}
+
+
+
