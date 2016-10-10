@@ -19,6 +19,7 @@
 	transform:rotateX(-30deg) rotateY(45deg);
 	-webkit-transform:rotateX(-30deg) rotateY(45deg);
 	animation: magic 5s forwards infinite linear;
+	-webkit-animation: magic 5s forwards infinite linear;
 }
 .cube:hover .f1{
 	-webkit-transform: translateX(-500px);
@@ -49,7 +50,7 @@
 }
 @keyframes magic {
 	100%{
-		-webkit-transform:rotateX(-390deg) rotateY(405deg);
+		transform:rotateX(-390deg) rotateY(405deg);
 	}
 }
 @-webkit-keyframes magic {
