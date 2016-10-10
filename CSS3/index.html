@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3学习首页</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body id="main">
+	<!-- 头部导航==================== -->
+	<header>
+		<img src="images/logo.png" class="logo">
+		<p class="weily">微力实验室</p>
+
+		<ul>
+			<li><a href="">荣誉展示</a></li>
+			<li><a href="">资源共享</a></li>
+			<li><a href="">学习中心</a></li>
+			<li><a href="transform.html">微力首页</a></li>
+		</ul>
+	</header><!-- 头部导航==================== -->
+	
+	<!-- 登录部分==========================	 -->
+	<section>
+		<h2>UI Design And Web Development</h2>
+		<h1>专注企业级网站应用开发</h1>
+		<hr>
+		<h3>成就你的IT梦</h3>
+		<!-- 登陆框===== -->
+		<from action="save.php" method="post">
+			<input type="text" id="UseName" placeholder="用户名："></input>
+			<br>
+			<input type="text" id="PassWord" placeholder="密码："></input>
+		</from><br>
+		<div class="Btn_box">
+			<button class="submit btn1" id="btn1" onmouseover="Btn1()">sign in</button>
+			<button class="submit btn2" href="#" id="btn2" onmouseover="Btn2()">sign up</button>
+		</div>
+	</section>
+</body>
+
+<script type="text/javascript">
+
+	// 控制按钮背景色===============
+	function Btn1(){
+		document.getElementById("btn1").style.background="#5890BF";
+		document.getElementById("btn2").style.background="#515C61";
+	}
+	function Btn2(){
+		document.getElementById("btn1").style.background="#515C61";
+		document.getElementById("btn2").style.background="#5890BF";
+	}
+
+</script>
+</html>

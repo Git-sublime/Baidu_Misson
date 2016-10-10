@@ -1,0 +1,131 @@
+.wrap {
+	padding-top: 150px;
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	perspective: 800px;/*场景到里面东西的距离*/
+	perspective-origin: 50% 50%;/*3D场景中心位置*/
+}
+
+/*魔方容器========================*/
+.cube{
+	cursor: pointer;
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	transform:rotateX(-30deg) rotateY(45deg);
+	-webkit-transform:rotateX(-30deg) rotateY(45deg);
+	animation: magic 5s forwards infinite linear;
+}
+.cube:hover .f1{
+	-webkit-transform: translateX(-500px);
+}
+.cube:hover .f2{
+	-webkit-transform: translateY(-500px);
+}
+.cube:hover .f3{
+	-webkit-transform: translateX(500px);
+}
+.cube:hover .f4{
+	-webkit-transform: translateX(-300px);
+}
+.cube:hover .f5{
+	-webkit-transform: translateY(-300px);
+}
+.cube:hover .f6{
+	-webkit-transform: translateX(300px);
+}
+.cube:hover .f7{
+	-webkit-transform: translateX(-100px);
+}
+.cube:hover .f8{
+	-webkit-transform: translateY(-100px);
+}
+.cube:hover .f9{
+	-webkit-transform: translateX(100px);
+}
+@keyframes magic {
+	100%{
+		-webkit-transform:rotateX(-390deg) rotateY(405deg);
+	}
+}
+@-webkit-keyframes magic {
+	100%{
+		-webkit-transform:rotateX(-390deg) rotateY(405deg);
+	}
+}
+
+.top,.bottom,.right,.left,.front,.back{
+	position: absolute;
+	height: 300px;
+	width: 300px;
+	font-size: 0;
+	border-radius: 30px;
+}
+
+
+/*魔方的每一面进行定位==============================*/
+.front {
+	transform: translateZ(150px);
+}
+.back {
+	transform: translateZ(-150px);
+}
+.top {	
+	-webkit-transform:rotateX(90deg) translateZ(150px);
+}
+.bottom{
+	-webkit-transform:rotateX(90deg) translateZ(-150px);
+}
+.left{
+	
+	-webkit-transform:rotateY(-90deg) translateZ(150px);
+}
+.right{
+	-webkit-transform:rotateY(-90deg) translateZ(-150px);
+}
+
+
+/*每个面里面的小Div设置属性===========================*/
+.min_box{
+	width: 90px;
+	height: 90px;
+	margin: 0;
+	border: 5px solid white;
+	display: inline-block;
+	border-radius: 20px;
+	-webkit-transition:all 2s;
+}
+.front div{
+	background: yellow;
+}
+.back div{
+	background: #CC530B;
+}
+.top div{
+	background: red;
+}
+.left div{
+	background: blue;
+}
+.right div{
+	background: green;
+}
+.bottom div{
+	background: #333;
+}
+
+
+/*阴影====================*/
+.shadow1{
+	margin: 0 auto;
+	border-radius: 50%;
+	width: 200px;
+	height: 100px;
+	background: #444;
+	box-shadow: 10px 10px 200px;
+	-webkit-transform:rotateX(45deg);
+}

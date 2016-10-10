@@ -1,0 +1,37 @@
+.show_box{
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url(../images/img01.jpg);
+	background-size: cover;
+	background-position: 50%;
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-decoration: none;
+}
+.hide_box{
+	width: 600px;
+	height: 100px;
+	margin-top: 400px;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,.2) 0%
+	,rgba(0,0,0,.6) 100%);
+	-webkit-transition:all .8s;
+	-webkit-background-opacity: 0.5;
+	font-size: 30px;
+	color: white;
+}
+.show_box:hover .hide_box{
+	margin-top: 300px;
+}
+
+.hide_box p{
+	font-family: "微软雅黑";
+	font-size: 28px;
+	margin: 0;
+	line-height: 45px;
+}
+.p2{
+	text-indent: 60px;
+}

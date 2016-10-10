@@ -1,0 +1,74 @@
+.image_box{
+	margin:0 auto;
+	margin-bottom:50px; 
+	margin-top: 50px;
+	position: relative;
+	overflow: hidden;
+}
+.image_box,.pic1,.pic2,.pic3{
+	width: 800px;
+	height: 500px;
+}
+.pic1,.pic2,.pic3{
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.pic1{
+	background-image: url(../images/pic_01.jpg);
+}
+.pic2{
+	background-image: url(../images/pic_02.jpg);
+}
+.pic3{
+	background-image: url(../images/pic_03.jpg);
+}
+
+/*.roll_btn{
+	width: 800px;
+	height: 70px;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+}*/
+.btn-pic1,.btn-pic2,.btn-pic3{
+	/*margin-top: 20px;*/
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border-radius: 50%;
+	background: white;
+	-webkit-opacity: 0.5;
+	-webkit-transition:all .5s;	
+	cursor: pointer;
+	/*position: absolute;*/
+}
+.btn-pic2{
+	left: 50px;
+}
+.btn-pic3{
+	left: 100px;
+}
+.pic{
+	width: 2400px;
+	height: 500px;
+	font-size: 0;
+	-webkit-transition:all .5s;	
+}
+.btn-pic2:hover ~ .pic{
+	-webkit-transform:translateX(-800px);
+}
+.btn-pic3:hover ~ .pic{
+	-webkit-transform:translateX(-1600px);
+}
+.btn-pic1:hover{
+	/*-webkit-opacity: 1;*/
+	background: red;
+}
+.btn-pic2:hover{
+	background: red;
+}
+.btn-pic3:hover{
+	background: red;
+}

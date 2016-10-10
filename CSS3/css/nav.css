@@ -1,0 +1,26 @@
+.nav{
+	width: 200px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+ul{
+	list-style: none;
+	margin-top: 200px;
+}
+ul li a{
+	text-decoration: none;
+	display: block;
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 50px;
+	font-weight: bold;
+	-webkit-transition:all 0.2s;
+	-ms-transition:all 0.2s;
+	-o-transition:all 0.2s;
+}
+ul li a:hover{
+	font-size: 25px;
+	color: red;
+}

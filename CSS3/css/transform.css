@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*导航栏==========================*/
+.nav{
+	width: 10vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #999;
+	height: 100vh;
+	text-align: center;
+	min-width: 125px;
+}
+ul{
+	list-style: none;
+	margin-top: 200px;
+}
+ul li a{
+	text-decoration: none;
+	display: block;
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 50px;
+	font-weight: bold;
+	-webkit-transition:all 0.2s;
+	-ms-transition:all 0.2s;
+	-o-transition:all 0.2s;
+}
+ul li a:hover{
+	font-size: 25px;
+	color: red;
+}
+
+/*右边主体部分=====（页面第一个动画）===============*/
+.main{
+	width: 210px;
+	height: 210px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: block;
+}
+.img,.border,.shadow{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.img{	
+	background: url(../images/img01.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.border{
+	position: absolute;
+	border:10px solid #072256;
+	border-right: 10px solid #FF7304 ;
+	border-bottom: 10px solid #FF7304;
+	box-sizing: border-box;
+	-webkit-transition:all .8s;
+}
+.main:hover .border{
+	transform: rotateZ(180deg);
+	background: rgba(0,0,0,0.5);
+}
+.shadow{
+	position: absolute;
+	top: 0;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.text{
+	text-align: center;
+	margin-top: 50%;
+	-webkit-transform: translateY(-50%);
+}
+.text p{
+	font-size: 22px;
+	margin: 0;
+	line-height: 25px;
+	transition: all 0.5s;
+	color: rgba(0,0,0,0);
+	font-family: "黑体";
+}
+.main:hover p{
+	color:rgba(255,255,255,1);
+}
+#body{
+	background: #ddd;
+	float: right;
+	width: 90vw;
+}
+
+/*返回顶部图标===================*/
+.return_top{
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	border-radius: 50%;
+	text-decoration: none;
+	background: #aaa;
+	-webkit-transition:all .3s;
+	z-index: 2;
+}
+.return_top:hover{
+	background: white;
+}
+.r1,.r2{
+	text-align: center;
+	font-weight: bold;
+}
+.r1{	
+	font-size: 25px;
+	margin-top: 8px;	
+}
+.r2{
+	font-size: 16px;
+	margin-top: 3px;
+}
