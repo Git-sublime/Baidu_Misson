@@ -1,0 +1,79 @@
+header{
+	height: 500px;
+	background: url(../image/home/header2_02.jpg);
+}
+.header-shadow{
+	background: rgba(0,0,0,.5);
+}
+.header-content{
+	margin: 100px 0 90px;
+}
+.header-content .buy-btn a{
+	width: 134px;
+	height: 27px;
+	border: 2px solid #fec601;
+	display: inline-block;
+	margin-top: 25px;
+	line-height: 27px;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 3px;
+}
+#active{
+	background-color: #fec601;
+	color: #333;
+}
+.header-content .buy-btn a.buy{
+	margin-right: 22px;
+}
+
+/*立即购买*/
+.now-buy{
+	margin-top: 80px;
+}
+.bg-img>img{
+	border: 3px solid #d2d2d2;
+}
+.sm-img{
+	padding-left: 3px;
+	margin-top: 18px;
+}
+.sm-img>img{
+	margin-right: 14px;
+}
+.content-buy h3{
+	text-indent: 55px;
+	font-size: 30px;
+	margin-bottom: 50px;
+	color: #4c4c4c;
+}
+.content-buy p{
+	text-indent: 55px;
+	font-size: 22px;
+	margin-bottom: 36px;
+	color: #4c4c4c;
+}
+.content-buy p a{
+	display: inline-block;
+	padding:8px 24px;
+	border: 2px solid #fec601;
+	text-align: center;
+	text-indent: 0;
+	margin-right: 12px;
+	border-radius: 3px;
+	color: #4c4c4c;
+}
+.content-buy>a{
+	display: block;
+	font-size: 28px;
+	color: #4c4c4c;
+	margin: 0 auto;
+	width: 286px;
+	height: 60px;
+	border: 3px solid #fec601;
+	background: #fec601;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 60px;
+	margin-top: 110px;
+}
