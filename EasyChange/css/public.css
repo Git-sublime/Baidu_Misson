@@ -68,25 +68,12 @@ header{
 }
 .nav li{
 	float: left;
-	/*line-height: 60px;*/
-}
-@keyframes test {
-	from {
-		padding: 0 18.1px;
-		opacity: 0;
-	}
-	to {
-		padding: 0 18px;
-		opacity: 1;
-	}
 }
 .nav li a{
 	text-align: center;
 	padding: 0 18px;
 	color: #fff;
 	font-size: 20px;
-	animation: test 0.01s ease;
-	animation-fill-mode: both;
 }
 .nav li a:hover{
 	color: #feca01;
