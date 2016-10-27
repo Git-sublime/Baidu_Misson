@@ -58,8 +58,8 @@ header{
 	}
 }
 .nav{
+	display: flex;
 	height: 60px;
-	/*overflow: hidden;*/
 }
 .nav li{
 	float: left;
@@ -81,7 +81,7 @@ header{
 	color: #fff;
 	font-size: 20px;
 	animation: test 0.01s ease;
-	animation-fill-mode: both; 
+	animation-fill-mode: both;
 }
 .nav li a:hover{
 	color: #feca01;
