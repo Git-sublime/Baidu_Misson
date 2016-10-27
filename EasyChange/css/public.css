@@ -259,7 +259,7 @@ footer .center{
 .Test .item{
 	width: 33.33%;
 	float: left;
-	text-align: left;
+	text-align: center;
 }
 .Test .item img{
 	float: left;
@@ -273,9 +273,6 @@ footer .center{
 	font-weight: bold;
 	font-size: 18px;
 	padding-top: 13px;
-}
-.Test .item.item2>img{
-	margin-left: 60px;
 }
 .Test .item.item3>img{
 	margin-left: 100px;
