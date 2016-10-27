@@ -62,6 +62,10 @@ header{
 	height: 60px;
 	align-items: center;
 }
+.search-bar {
+	display: flex;
+	align-items: center;
+}
 .nav li{
 	float: left;
 	/*line-height: 60px;*/
