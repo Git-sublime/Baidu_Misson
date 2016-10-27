@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="favicon.ico"/> 
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/order.js"></script>
 </head>
 <body>
 	<!-- header头部 -->
@@ -39,26 +40,26 @@
 					<ul class="clearfix search-bar">
 						<li><input type="text" placeholder="搜索" class="choose-search"></input></li>
 						<!-- 排序，下拉选择 -->
-						<li id="order">
-							<a href="javascript:void(0)">排序</a>
-							<ul>
+						<li class="order">
+							<a href="javascript:void(0)" id="order-1">排序</a>
+							<ul id="order1">
 								<li><a href="javascript:void(0)">人气</a></li>
 								<li><a href="javascript:void(0)">销量</a></li>
 								<li><a href="javascript:void(0)">价格</a></li>
 							</ul>
 						</li>
-						<li id="order">
-							<a href="javascript:void(0)">地区</a>
-							<ul>
+						<li class="order">
+							<a href="javascript:void(0)" id="order-2">地区</a>
+							<ul id="order2">
 								<li><a href="javascript:void(0)">成都</a></li>
 								<li><a href="javascript:void(0)">上海</a></li>
 								<li><a href="javascript:void(0)">北京</a></li>
 								<li><a href="javascript:void(0)">其他...</a></li>
 							</ul>
 						</li>
-						<li id="order">
-							<a href="javascript:void(0)">价位</a>
-							<ul>
+						<li class="order">
+							<a href="javascript:void(0)" id="order-3">价位</a>
+							<ul id="order3">
 								<li><a href="javascript:void(0)">10元以下</a></li>
 								<li><a href="javascript:void(0)">10-50元</a></li>
 								<li><a href="javascript:void(0)">50-100元</a></li>

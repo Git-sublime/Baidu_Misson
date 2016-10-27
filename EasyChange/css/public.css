@@ -138,17 +138,17 @@ header{
 	background: rgba(0,0,0,.6);
 	border-radius: 3px;
 }
-.choose ul li{
+.search-bar>li{
 	float: left;
 	height: 36px;
 	line-height: 36px;
 	font-size: 0;
 	margin-right: 7px;
 }
-.choose ul li a{
+.search-bar>li a{
 	font-size: 14px;
 }
-.choose ul li .choose-search{
+.search-bar>li .choose-search{
 	height: 100%;
 	border: none;
 	width: 415px;
@@ -156,7 +156,7 @@ header{
 	border-radius: 3px;
 	font-size: 14px;
 }
-#order{
+.order{
 	width: 140px;
 	height: 36px;
 	border-radius: 3px;
@@ -164,13 +164,13 @@ header{
 	background-color: #fff;
 	position: relative;
 }
-#order a{
+.order a{
 	display: block;
 	padding: 0 10px;
 	color: #999;
 	font-size: 14px;
 }
-#order ul{
+.order ul{
 	position: absolute;
 	top: 32px;
 	left: 0;
@@ -183,23 +183,23 @@ header{
 	border-top: none;
 	box-shadow: 0px 2px 2px #ddd;
 }
-#order ul li{
+.order ul li{
 	float: none;
 	width: 138px;
 	margin: 0;
 	background: #fff;
 	font-size: 14px;
 }
-#order ul li a{
+.order ul li a{
 	display: block;
 	padding: 0 10px;
 	height: 100%;
 	color: #444;
 }
-#order ul li a:hover{
+.order ul li a:hover{
 	background: #ddd;
 }
-#order:hover ul{
+.order:hover ul{
 	display: block;
 }
 .choose ul li.search-btn{

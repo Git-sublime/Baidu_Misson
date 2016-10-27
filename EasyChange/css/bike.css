@@ -273,7 +273,7 @@ header{
 	border-radius: 3px;
 	background-color: rgba(0,0,0,.5);
 }
-.shop-form table #order{
+.shop-form table .order{
 	height: 33px;
 	width: 205px;
 	background: url(../image/home/homepage_19.jpg) no-repeat 180px 10px;
@@ -281,14 +281,14 @@ header{
 	line-height: 33px;
 	margin-left: 4px;
 }
-.shop-form table #order ul{
+.shop-form table .order ul{
 	margin-top: -3px;
 }
-.shop-form table #order ul li{
+.shop-form table .order ul li{
 	width: 203px;
 	height: 30px;
 }
-.shop-form table #order ul li a{
+.shop-form table .order ul li a{
 	line-height: 30px;
 }
 .shop-form table td>input{
