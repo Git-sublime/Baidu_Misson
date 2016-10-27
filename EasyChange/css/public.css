@@ -60,10 +60,11 @@ header{
 .nav{
 	display: flex;
 	height: 60px;
+	align-items: center;
 }
 .nav li{
 	float: left;
-	line-height: 60px;
+	/*line-height: 60px;*/
 }
 @keyframes test {
 	from {
