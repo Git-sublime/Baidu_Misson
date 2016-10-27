@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
 	<title>易换网</title>
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/bike.css">
 </head>
 <body>
+	<!-- header头部 -->
 	<header>
 		<div class="header-shadow">
 			<div class="center">
@@ -74,34 +76,188 @@
 		</div><!-- header-shadow -->
 	</header>
 
-	<!-- 立即购买 -->
-	<section class="clearfix now-buy">
-		<div class="center">
-			<div class="col-2">
-				<div class="bg-img">
-					<img src="image/images/bike_03.jpg">
+	<!-- main主体部分 -->
+	<div class="main">
+		<!-- 立即购买 -->
+		<section class="clearfix now-buy">
+			<div class="center">
+				<div class="col-2">
+					<div class="bg-img">
+						<img src="image/images/bike_03.jpg">
+					</div>
+					<div class="sm-img">
+						<img src="image/images/bike_07.jpg">
+						<img src="image/images/bike_09.jpg">
+						<img src="image/images/bike_11.jpg">
+					</div>
 				</div>
-				<div class="sm-img">
-					<img src="image/images/bike_07.jpg">
-					<img src="image/images/bike_09.jpg">
-					<img src="image/images/bike_11.jpg">
+				<div class="col-2 content-buy">
+					<h3>九成新自行车</h3>
+					<p>转卖价：￥1000.00</p>
+					<p>成&nbsp;色：九成新</p>
+					<p>联系方式：<a href="javascript:void(0)" id="active">与他对话</a></p>
+					<p>交易方式：<a href="javascript:void(0)">在线交易</a><a href="javascript:void(0)">面对面交易</a></p>
+					<a href="javascript:void(0)">立即购买</a>
 				</div>
 			</div>
-			<div class="col-2 content-buy">
-				<h3>九成新自行车</h3>
-				<p>转卖价：￥1000.00</p>
-				<p>成&nbsp;色：九成新</p>
-				<p>联系方式：<a href="javascript:void(0)" id="active">与他对话</a></p>
-				<p>交易方式：<a href="javascript:void(0)">在线交易</a><a href="javascript:void(0)">面对面交易</a></p>
-				<a href="javascript:void(0)">立即购买</a>
+		</section>
+		
+		<!-- 产品描述 -->
+		<section>
+			<div class="center describe">
+				<ul>
+					<li><a href="javascript:void(0)">产品参数</a><span>/</span></li>
+					<li><a href="javascript:void(0)">卖家描述</a><span>/</span></li>
+					<li><a href="javascript:void(0)">其他</a></li>
+				</ul>
+				<p>上市时间: 2014年春季刹车类型: 倒刹车品牌: 千百力是否商场同款: 尺寸: 53CM(175CM-180CM)车架材质: 高碳钢适用对象: 中性                       毕业大四学长，骑了一年，各方面还是很好的。质量很好，性价比很高！
+				</p>
 			</div>
-		</div>
-	</section>
+		</section>
+
+		<!-- 你可能会喜欢 -->
+		<section class="like">
+			<h2>你可能会喜欢</h2>
+			<p>You may like it</p>
+			<div class="hr"></div>
+			
+			<div class="like-img center clearfix">
+				<div class="item">
+					<div>
+						<img src="image/images/bike_16.jpg">
+					</div>
+					<p class="p1">闲置数码</p>
+					<p class="p2">￥300.00</p>
+					<p class="p3">2016.9&nbsp;购买&nbsp;/&nbsp;成都</p>
+					<a href="javascript:void(0)">商家认证</a>
+				</div>
+				<div class="item">
+					<div>
+						<img src="image/images/bike_18.jpg">
+					</div>
+					<p class="p1">闲置数码</p>
+					<p class="p2">￥300.00</p>
+					<p class="p3">2016.9&nbsp;购买&nbsp;/&nbsp;成都</p>
+					<a href="javascript:void(0)">商家认证</a>
+				</div>
+				<div class="item">
+					<div>
+						<img src="image/images/bike_20.jpg">
+					</div>
+					<p class="p1">闲置数码</p>
+					<p class="p2">￥300.00</p>
+					<p class="p3">2016.9&nbsp;购买&nbsp;/&nbsp;成都</p>
+					<a href="javascript:void(0)">商家认证</a>
+				</div>
+				<div class="item">
+					<div>
+						<img src="image/images/bike_22.png">
+					</div>
+					<p class="p1">闲置数码</p>
+					<p class="p2">￥300.00</p>
+					<p class="p3">2016.9&nbsp;购买&nbsp;/&nbsp;成都</p>
+					<a href="javascript:void(0)">商家认证</a>
+				</div>
+			</div>
+		</section>
+		
+		<!-- 搜索框 -->
+		<section class="search-box">
+			<input type="text" placeholder="搜索"></input>
+		</section>
+		
+		<!-- 帮我找好物 -->
+		<section class="find-shop">
+			<div class="shadow">
+				<div class="center">
+					<div class="shop-con">
+						<p class="p1">帮我找好物</p>
+						<p>把想要的宝贝信息告诉我们！</p>
+						<p>当有符合要求的宝贝上架，</p>
+						<p>第一时间通知您！</p>
+					</div>
+					<div class="shop-form">
+						<p>求购好物</p>
+						<table>
+							<tr>
+								<td>
+									<ul class="clearfix">
+										<li id="order">
+											<a href="javascript:void(0)">排序</a>
+											<ul>
+												<li><a href="javascript:void(0)">人气</a></li>
+												<li><a href="javascript:void(0)">销量</a></li>
+												<li><a href="javascript:void(0)">价格</a></li>
+											</ul>
+										</li>
+									</ul>
+								</td>
+								<td>
+									<ul class="clearfix">
+										<li id="order">
+											<a href="javascript:void(0)">排序</a>
+											<ul>
+												<li><a href="javascript:void(0)">人气</a></li>
+												<li><a href="javascript:void(0)">销量</a></li>
+												<li><a href="javascript:void(0)">价格</a></li>
+											</ul>
+										</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="text" placeholder="计划要的时间"></input>
+								</td>
+								<td>
+									<input type="text" placeholder="计划要的时间"></input>
+								</td>
+							</tr>
+							<tr class="full">
+								<td>
+									<textarea></textarea>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="center">
+				<div class="Test clearfix">
+					<div class="item">
+						<img src="image/home/homepage-14.jpg">
+						<div class="test-con">
+							<p class="yz">学号验证</p>
+							<p class="pz">品质保证&nbsp;登录认证</p>
+						</div>
+					</div>
+					<div class="item item2">
+						<img src="image/home/homepage-15.jpg">
+						<div class="test-con">
+							<p class="yz">特色服务</p>
+							<p class="pz">特色服务&nbsp;面对面交易</p>
+						</div>
+					</div> 
+					<div class="item item3">
+						<img src="image/home/homepage-16.jpg">
+						<div class="test-con">
+							<p class="yz">学号验证</p>
+							<p class="pz">维护你的消费权益</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 
 
+	</div><!-- main -->
 
+	<!-- footer底部 -->
 	<footer>
 		<div class="center">
 			<div class="col-3 foot-img">

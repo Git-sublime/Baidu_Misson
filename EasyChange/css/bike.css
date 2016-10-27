@@ -1,6 +1,8 @@
 header{
 	height: 500px;
 	background: url(../image/home/header2_02.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
 }
 .header-shadow{
 	background: rgba(0,0,0,.5);
@@ -48,7 +50,7 @@ header{
 	color: #4c4c4c;
 }
 .content-buy p{
-	text-indent: 55px;
+	padding-left: 55px;
 	font-size: 22px;
 	margin-bottom: 36px;
 	color: #4c4c4c;
@@ -62,6 +64,7 @@ header{
 	margin-right: 12px;
 	border-radius: 3px;
 	color: #4c4c4c;
+	margin-bottom: 10px;
 }
 .content-buy>a{
 	display: block;
@@ -76,4 +79,229 @@ header{
 	text-align: center;
 	line-height: 60px;
 	margin-top: 110px;
+}
+
+/*产品描述*/
+.describe{
+	height: 176px;
+	border-top:4px solid #bfbfbf; 
+	border-bottom:4px solid #bfbfbf; 
+	margin-top: 50px;
+}
+.describe ul{
+	text-align: center;
+	margin: 30px 0;
+}
+.describe ul li{
+	display: inline-block;
+	text-align: center;
+	width: 150px;
+}
+.describe ul li a{
+	color: #4c4c4c;
+	font-size: 16px;
+	font-weight: bold;
+}
+.describe ul li>span{
+	float: right;
+	display: inline-block;
+}
+.describe p{
+	width: 700px;
+	margin: 0 auto;
+	font-size: 11px;
+	color: #666;
+}
+/*你可能会喜欢*/
+.like{
+	padding-bottom: 70px;
+	margin-top: 70px;
+	background: #ededed;
+	text-align: center;
+}
+.like h2{
+	font-weight: normal;
+	color: #feca01;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+.like p{
+	color: #666;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.like>.hr:hover{
+	width: 55px;
+}
+.like-img .item{
+	width: 23%;
+	margin: 1%;
+	float: left;
+	margin-top: 50px;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: all .3s;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	-ms-transition: all .3s;
+}
+.like-img .item:hover{
+	background: #fff;
+	box-shadow: 3px 3px 5px #ccc;
+}
+.like-img .item:hover img{
+	transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+}
+.like-img .item>p{
+	color: #4c4c4c;
+	text-indent: 24px;
+	text-align: left;
+}
+.like-img .item>div{
+	overflow: hidden;
+}
+.like-img .item img{
+	width: 100%;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+}
+.like-img .item>p.p1{
+	margin-top: 25px;
+	font-size: 14px;
+}
+.like-img .item>p.p2{
+	margin-top: 28px;
+	font-size: 12px;
+	color: #fec601;
+}
+.like-img .item>p.p3{
+	margin-top: 10px;
+	font-size: 12px;
+}
+.like-img .item>a{
+	width: 55px;
+	height: 16px;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	background: #fec601;
+	float: right;
+	color: #fff;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+/*搜索框*/
+.search-box{
+	background: #fec601;
+	padding: 10px 0;
+}
+.search-box input{
+	display: block;
+	margin: 0 auto;
+	width: 324px;
+	height: 32px;
+	border:0;
+	text-indent: 5px;
+	border-radius: 3px;
+	background: url(../image/images/search_03.png) no-repeat 300px 7px;
+	background-color: #fff;
+}
+
+/*帮我找好物*/
+.find-shop{
+	height: 335px;
+	background: url(../image/images/bike_24.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.shadow{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.44);
+}
+.shop-con{
+	width: 450px;
+	float: left;
+	text-align: center;
+	padding-top: 88px;
+}
+.shop-con p{
+	font-size: 15px;
+	margin-bottom: 16px;
+	color: #fff;
+	padding: 0 110px;
+	text-align: left;
+}
+.shop-con p.p1{
+	font-size: 22px;
+	color: #fec601;
+}
+
+.shop-form{
+	float: left;
+	margin-top: 30px;
+	width: 436px;
+	height: 212px;
+	border:2px solid #fec601;
+	border-radius: 3px;
+	padding: 28px 25px;
+}
+.shop-form p{
+	font-size: 18px;
+	color: #fec601;
+	margin-bottom: 12px;
+}
+.shop-form table{
+	width: 100%;
+}
+.shop-form table tr{
+	display: block;
+	margin-bottom: 6px;
+}
+.shop-form table td{
+	width: 216px;
+	height: 39px;
+	border-radius: 3px;
+	background-color: rgba(0,0,0,.5);
+}
+.shop-form table #order{
+	height: 33px;
+	width: 205px;
+	background: url(../image/home/homepage_19.jpg) no-repeat 185px 10px;
+	background-color: #fff;
+	line-height: 33px;
+	margin-left: 4px;
+}
+.shop-form table #order ul{
+	margin-top: -3px;
+}
+.shop-form table #order ul li{
+	width: 203px;
+	height: 30px;
+}
+.shop-form table #order ul li a{
+	line-height: 30px;
+}
+.shop-form table td>input{
+	height: 33px;
+	border:none;
+	width: 205px;
+	margin-left: 4px;
+	text-indent: 10px;
+	font-size: 14px;
+	border-radius: 3px;
+}
+.shop-form table td.full{
+	width: 100%;
+	height: 64px;
+}
+.shop-form table td.full textarea{
+	width: 420px;
+	height: 55px;
+	background-color: #fff;
+	border:none;
 }
