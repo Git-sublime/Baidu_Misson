@@ -21,11 +21,11 @@ header{
 	color: #fff;
 	border-radius: 3px;
 }
-#active{
+.header-content .buy-btn a:nth-child(2){
 	background-color: #fec601;
 	color: #333;
 }
-.header-content .buy-btn a.buy{
+.header-content .buy-btn a:nth-child(1){
 	margin-right: 22px;
 }
 
@@ -63,14 +63,17 @@ header{
 }
 .content-buy p a{
 	display: inline-block;
-	padding:8px 24px;
+	padding:7px 24px;
 	border: 2px solid #fec601;
 	text-align: center;
 	text-indent: 0;
 	margin-right: 12px;
 	border-radius: 3px;
 	color: #4c4c4c;
-	/*margin-bottom: 10px;*/
+}
+.content-buy p a.active{
+	background-color: #fec601;
+	padding: 7px 40px;
 }
 .content-buy>a{
 	display: block;
