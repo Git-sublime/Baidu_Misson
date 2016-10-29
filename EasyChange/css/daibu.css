@@ -1,0 +1,86 @@
+header{
+	height: 686px;
+	background: url(../image/shop/bg-banner1_02.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.header-content{
+	margin: 170px 0 200px;
+}
+.like{
+	background-color: #ededed;
+	margin: 0;
+	padding: 0;
+}
+.like .center{
+	background-color: #fff;
+}
+.sell{
+	padding-top: 15px;
+	padding-bottom: 40px; 
+}
+.sell ul{
+	height: 55px;
+	width: 98%;
+	margin: 0 auto;
+	border:2px solid #ededed;
+}
+.sell li a{
+	float: left;
+	padding-right: 25px;
+	height: 55px;
+	line-height: 55px;
+	margin: 0 25px;
+	font-size: 15px;
+	text-align: left;
+	color: #606060;
+	background: url(../image/shop/down_03.jpg) no-repeat right center;
+}
+.sell li a.active{
+	color: #fec601;
+	background: url(../image/shop/down2_03.jpg) no-repeat right center;
+}
+.sell li a.my-sell{
+	float: right;
+	width: 85px;
+	height: 29px;
+	margin: 13px 0;
+	background: #fec601;
+	text-align: center;
+	line-height: 29px;
+	padding: 0;
+	border-radius: 3px;
+	margin-right: 10px;
+	color: #444;
+}
+.num{
+	padding: 35px 0;
+	background: #fff;
+	font-size: 0;
+}
+.num ul li{
+	display: inline-block;
+}
+.num ul li a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border:2px solid #ddd;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	margin-right: 15px;
+	color: #666;
+	border-radius: 3px;
+}
+.num ul li a.more{
+	background: url(../image/shop/right-triangle.jpg) no-repeat center center;
+}
+.num ul li a.hide-num{
+	height: 8px;
+	width: 15px;
+	line-height: 8px;
+	border:none;
+	margin-left: -10px;
+	margin-right: 5px;
+}

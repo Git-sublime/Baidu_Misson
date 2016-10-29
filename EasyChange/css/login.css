@@ -1,0 +1,80 @@
+header{
+	height: auto;
+	background: none; 
+	padding: 40px 0;
+	border-top: 10px solid #fec601;
+}
+.nav li a{
+	color: #444;
+}
+.nav li.logo{
+	padding-right: 200px;
+}
+section{
+	height: 1145px;
+	background: url(../image/shop/login-bg_02.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+}
+.login{
+	height: 1040px;
+	position: relative;
+}
+.login .form{
+	height: 770px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 500px;
+}
+.form h2{
+	font-weight: normal;
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 64px;
+}
+.form div{
+	background: rgba(0,0,0,0.4);
+	padding: 100px 56px 175px;
+	color: #fff;
+
+}
+.form div p{
+	margin-bottom: 60px;
+	font-size: 20px;
+	text-indent: 8px;
+}
+.form div input{
+	display: block;
+	width: 380px;
+	height: 55px;
+	border: 8px solid rgba(0,0,0,.6);
+	margin-bottom: 50px;
+	border-radius: 3px;
+	text-indent: 20px;
+	font-size: 14px;
+}
+.form div a{
+	display: block;
+	width: 380px;
+	height: 55px;
+	background: #fec601;
+	color: #444;
+	text-align: center;
+	line-height: 55px;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+
+.null{
+	height: 150px;
+	border-bottom: 10px solid #fec601;
+}
+
+@media (max-width: 1000px) {
+	.form{
+		left: 50%;
+		margin-left: -250px;
+	}
+}
+

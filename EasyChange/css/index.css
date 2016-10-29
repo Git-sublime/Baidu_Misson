@@ -33,7 +33,7 @@
 	background-color: #0e2335;
 }
 .life-img .item p{
-	font-size: 32px;
+	font-size: 26px;
 	text-align: center;
 	color: #fff;
 	margin-top: 150px;
@@ -48,7 +48,7 @@
 .life-img .item:hover p{
 	border: 1px solid #fff;
 	color: #feca01;
-	font-size: 24px;
+	font-size: 28px;
 }
 .life-img .item.item1{
 	background: url(../image/home/homepage_25.jpg);

@@ -1,0 +1,70 @@
+
+/*//我要卖=========*/
+.header-content{
+	margin: 170px 0 200px;
+}
+.info{
+	margin-top: 100px;
+	margin-bottom: 150px;
+}
+.info h2{
+	font-size: 28px;
+	text-indent: 15px;
+	color: #666;
+	font-weight: normal;
+	margin-bottom: 70px;
+}
+.info .cho{
+	margin-bottom: 23px;
+	border:1px solid #ccc;
+	height: 85px;
+	width: 48%;
+	margin-left: 15px;
+	float: left;
+	position: relative;
+}
+.info .cho input{
+	width: 100%;
+	height: 100%;
+	border:none;
+	text-indent: 30px;
+	font-size: 22px;
+}
+.info .cho button{
+	display: block;
+	position: absolute;
+	width: 85px;
+	height: 100%;
+	right: 0;
+	top: 0;
+	background: url(../image/others/images/btn_03.jpg) no-repeat center center;
+	border:none;
+	cursor: pointer;
+	outline: none;
+}
+.info .cho.help-choose{
+	width: 97.6%;
+}
+.info .cho.submit{
+	margin-top: 135px;
+	border:none;
+}
+.info a{
+	display: block;
+	width: 100%;
+	height: 85px;
+	background: #fec601;
+	text-align: center;
+	line-height: 85px;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 30px;
+}
+.info .cho.guanzhu{
+	margin-top: 90px;
+	border:none;
+}
+.info .cho.guanzhu a{
+	background: none;
+	color: #666;
+}
