@@ -1,0 +1,133 @@
+p{
+	letter-spacing: 1px;
+}
+.center-header{
+	height: 242px;
+	border-bottom:5px solid #dcdcdc; 
+}
+
+.center-header h2{
+margin-top: 68px;
+margin-bottom: 42px;
+text-align: center;
+font-size: 40px;
+letter-spacing:10px;
+font-weight:normal;
+}
+
+.center-header h2 span{
+	color:#fece27;
+}
+
+.center-header p{
+	font-size:15px;
+	text-align: center;
+	margin-bottom: 22px;
+	letter-spacing: 3px;
+}
+
+.content{
+	padding-top:22px;
+	height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+
+
+ /* coco部分*/
+
+
+.CoCoNews{
+width:490px;
+height: 550px;
+border-bottom:5px solid #dcdcdc;  
+margin-bottom:36px;
+float:left;
+}
+.CoCoNews img{
+	width:490px;
+	height: 290px;
+}
+.CoCoNews p{
+	font-size: 20px;
+	line-height:40px; 
+	letter-spacing:4px;
+}
+.CoCoNews li{
+    padding-left: 16px;
+	margin-bottom: 15px;
+    background:url(../image/activity/yuan.png) no-repeat left 6px;
+}
+.CoCoNews li p{
+	/*text-indent:16px;*/
+	font-size:15px;
+	line-height: 20px;
+	letter-spacing: 2px;
+}
+
+/*itme部分*/
+
+.content .item {
+	width:470px;
+	
+}
+.content .item h4{ 430
+	width:100%;
+	height: 45px;
+	line-height: 45px;
+	color:#fff;
+	font-size:20px; 
+	text-indent:90px;
+	margin-bottom: 40px;
+	background:#434343;
+	position: relative;
+}
+.content .item h4 span{
+	display: inline-block;
+	width:40px;
+	height: 45px;
+    background-color:#fece27;
+    position:absolute;
+    right:0;
+}
+.content .item .mesgBox{
+	margin-bottom: 20px;
+}
+.item .mesgBox .mesg{
+	font-size:15px;
+    padding-left:10px;
+}
+.item .mesgBox .releaseTime{
+	font-size: 15px;
+	color:#d3d3d3;
+	padding-left:10px;
+}
+
+.item .change{
+	background:url(../image/activity/change.png) no-repeat left center;
+	text-indent: 20px;
+}
+.center  .change a{
+	color:#4d4d4d;
+}
+
+.preferentialzone{
+	height: 550px;
+	padding-left: 30px;
+}
+.part-timezone{
+	height: 480px;
+}
+.adzone{
+	height: 480px;
+	padding-left: 30px;
+} 
+
+.center .item .change:hover a{
+color:#fece27;
+}

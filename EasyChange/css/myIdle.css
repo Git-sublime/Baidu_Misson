@@ -1,0 +1,185 @@
+
+  /*头部中间位置*/
+.peopleMesg{
+	padding-top: 125px;
+	width:290px;
+	margin:0 auto;
+	text-align: center;
+	color:#fff;
+
+}
+.peopleMesg img{
+	width:136px;
+	height: 136px;
+	margin-bottom: 24px;
+	border-radius: 50%;
+	
+}
+.peopleMesg .name{
+	font-size: 40px;
+	text-align: center;
+
+}
+.peopleMesg .changeMesg{
+	font-size: 15px;
+	text-indent: 20px;
+	text-align: center;
+	line-height: 20px;
+	background: url(../image/myIdle/bj-1.png) no-repeat 90px center;
+	margin-bottom: 30px;
+}
+.peopleMesg .signature{
+	font-size: 15px;
+}
+
+.main{
+	width:100%;
+	height: 910px;
+
+}
+.main .content{
+	width:1000px;
+	height: 910px;
+	box-sizing: border-box;
+	margin:0 auto;
+	padding-top: 140px;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #bebebe;
+}
+
+ .siderbar{
+	width:210px;
+	height:630px;
+}
+.siderbar li{
+	width:200px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 22px;
+	text-indent: 40px;
+}
+.siderbar li:nth-child(1){
+	margin-bottom:20px;
+}
+.siderbar li.active{
+	background: #ffd127;
+}
+.siderbar li.active a{
+	color: #fff;
+}
+.siderbar a{
+	color:#666;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+ 
+ .siderbar li:hover {
+ 	background:#ffd127;
+ }
+ .siderbar li:hover a{
+ 	color:#fff;
+ }
+.siderbar .lesser{
+	margin-top: 50px;
+	font-size: 16px;
+}
+
+
+
+.main .show{
+	width:780px;
+	height:630px;
+	padding-left: 22px;
+	border-left: 2px solid #e5e5e5;
+
+}
+
+.show li{
+   display: inline-block;
+   width:240px;
+   height: 300px;
+   float: left;
+   margin-right: 10px;
+}
+.show{
+	color: #444;
+}
+.show h2{
+	text-align: center;
+	color: #888080;
+	font-weight: normal;
+	margin-top: 50px;
+	padding-top: 130px;
+	border-top: 2px dotted #e5e5e5;
+}
+.show .goods{
+	width:240px;
+	height:215px;
+}
+.show .Title{
+	font-size: 14px;
+	margin-bottom: 12px;
+	text-align: center;
+	text-indent: 37px;
+}
+.show .Title span{
+	color:#bebebe;
+	font-size: 7px;
+}
+
+.show .edit{
+	color:#bebebe;
+	text-indent: 13px;
+	font-size: 10px;
+	text-align: center;
+	background: url(../image/myIdle/bj-2.png) no-repeat 85px center;
+}
+.show .hr{
+	width: 100%;
+	height: 2px;
+	background: #d2d2d2;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+.jindu{
+	height: 60px;
+	margin: 0 auto;
+	margin-top: -30px;
+	display: flex;
+	justify-content:space-between;
+}
+.jindu .item{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	background: #fff;
+}
+.jindu .item a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	background: #e5e5e5;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	font-size: 15px;
+}
+.jindu .item a.active{
+	background: #fec601;
+}
+.jindu-con{
+	height: 40px;
+	line-height: 40px;
+	display: flex;
+	justify-content:space-between;
+	text-align: center;
+}
+.jindu-con p{
+	width: 33.33%;
+	font-size: 15px;
+}
