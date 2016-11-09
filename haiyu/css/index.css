@@ -68,7 +68,7 @@
 	overflow: hidden;
 	white-space: nowrap;
 }
-.vedio .more{
+.vedio a.more{
 	float: left;
 	text-indent: 20px;
 	margin-top: 16px;
