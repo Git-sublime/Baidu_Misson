@@ -1,0 +1,398 @@
+
+.roll{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+#img-roll li{
+	float: left;
+}
+#img-roll li a img{
+	width: 100%;
+}
+
+.roll .contorl-btn{
+	position: absolute;
+	bottom: 20px;
+	width: 100px;
+	left: 50%;
+	margin-left: -50px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.roll .contorl-btn li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+}
+.roll .contorl-btn li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: blue;
+}
+.roll .contorl-btn li a:hover{
+	background: #f00;
+}
+
+
+.juanzhan{
+	margin: 25px 15px 0px;
+	height: 25px;
+	background: url(../images/img1_03.png);
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.article{
+	margin: 0 33px 0;
+	background: #fff;
+	padding-top: 20px;
+}
+.vedio{
+	width: 71%;
+	float: left;
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+	border-right: 1px solid #eee;
+}
+.vedio h2{
+	float: left;
+	text-indent: 10px;
+	line-height: 50px;
+	color: #9a1b21;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.vedio>a{
+	float: left;
+	text-indent: 20px;
+	margin-top: 16px;
+	padding-right: 15px;
+	background: url(../images/more_07.png) no-repeat right center;
+	font-size: 16px;
+	color: #666;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.vedio>a:hover{
+	color: #9a1b21;
+}
+/*.vedio ul{
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	margin-left: -100px;
+	text-align: center;
+	width: 200px;
+}
+.vedio ul li{
+	padding: 3px 10px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	border-radius: 3px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.vedio ul li.more{
+	border: none;
+}*/
+.vedio-box{
+	width: 100%;
+	display: flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+.vedio .item{
+	display: inline-block;
+	 width: 300px;
+	 height: auto;
+	 padding-right: 17px;
+	 margin-bottom: 30px;    
+}
+.vedio h3{
+	text-indent: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 14px;
+	background: url(../images/yun_03.png) no-repeat left center;
+}
+.vedio .item .img{
+	position: relative;
+	height: 160px;
+	overflow: hidden;
+}
+.vedio .item .img a{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	opacity: 0;
+	transition: opacity .2s;
+	-webkit-transition: opacity .2s;
+	-ms-transition: opacity .2s;
+	-o-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+}
+.vedio .item .img a img{
+	display: block;
+	width: 40px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.vedio .item .img:hover a{
+	opacity: 1;
+}
+.vedio .item>p{
+	margin-top: 10px;
+	line-height: 20px;
+	color: #333;
+}
+.vedio .item div p{
+	line-height: 30px;
+	color: #333;
+}
+.vedio .item p.lx{
+	float: left;
+}
+.vedio .item p.zj{
+	float: right;
+}
+/*侧边栏============================*/
+.side-right{
+	width: 27%;
+	float: right;
+}
+.side-right a{
+	display: block;
+}
+.caption{
+	height: 40px;
+	margin-bottom: 5px;
+}
+.caption h3{
+	float: left;
+	background: url(../images/list_03.png) no-repeat left center;
+	text-indent: 40px;
+	line-height: 40px;
+	margin-left: -10px;
+	color: #9a1b21;
+	border-top: 1px solid #eee;
+	width: 60%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.caption a{
+	float: right;
+	margin-right: 10px;
+	color: #666;
+	font-size: 12px;
+	margin-top: 15px;
+	width: 66px;
+}
+.caption a:hover{
+	text-decoration: underline;
+}
+.side{
+	margin: 20px 20px 0 0;
+	height: 60px;
+	padding-right: 78px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+/*.side:nth-child(1){
+	margin-top: 0；
+}*/
+.side.side1{
+	background: url(../images/icon3.png) no-repeat right center ;
+	background-color: #eee;
+}
+.side.side2{
+	background: url(../images/icon4.png) no-repeat right center ;
+	background-color: #eee;
+}
+.side.side3{
+	background: url(../images/icon2.png) no-repeat right center ;
+	padding-right: 65px;
+	background-color: #eee;
+}
+.side p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-indent: 10px;
+	color: #666;
+}
+.side p:nth-child(1){
+	line-height: 35px;
+	color: #b76d22;
+	font-size: 16px;
+}
+.teacher{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-right: 20px;
+	margin-bottom: 40px;
+}
+.teacher div{
+	display: inline-block;
+	width: 100px;
+	/*height: 120px;*/
+}
+.teacher .head-img{
+	width: 90px;
+	height: 90px;
+	border: 5px solid #333;
+	border-radius: 50%;
+}
+.teacher .head-img.img1{
+	background: url(../images/teacher1.jpg);
+	background-size: cover;
+	background-position: 50% 50%;	
+}
+.teacher .head-img.img2{
+	background: url(../images/teacher2.jpg);
+	background-size: cover;
+	background-position: 50% 50%;	
+}
+
+.history{	
+	margin-bottom: 30px;
+	overflow: hidden;
+	width: 100%;
+}
+.history p{
+	width: 65%;
+	float: left;
+	text-indent: 10px;
+	color: #555;
+	line-height: 25px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.history a:hover{
+	background: #fff;
+}
+.history a:hover p{
+	color: #9a1b21;
+}
+.history span{
+	display: inline-block;
+	float: right;
+	color: #666;
+	margin-right: 10px;
+	font-size: 10px;
+	line-height: 25px;
+	width: 53px;
+}
+.contactus p{
+	line-height: 20px;
+}
+
+/*机构概况*/
+.jigou p{
+	line-height: 20px;
+	padding-left: 20px;
+}
+.jigou h3{
+	margin-left: 5px;
+	line-height: 40px;
+	border-bottom: 2px solid #ccc;
+}
+.jigou p.guwen{
+	margin-bottom: 20px;
+}
+.jigou img{
+	max-width: 90%;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+/*视频资源*/
+.play{
+	width: 100%;
+	height: 600px;
+}
+
+/*汉语机构*/
+.hezuo .items{
+	padding: 10px 20px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+}
+.hezuo h3{
+	border-top: 1px solid #ccc;
+}
+.items-height{
+	height: 190px;
+}
+.hezuo-logo{
+	width: 80px;
+	height:80px;
+	float: left;
+	overflow: hidden;
+}
+.hezuo .items p{
+	line-height: 22px;
+	margin-left: 100px;
+}
+.items .content{
+	margin-bottom: 20px;
+}
+.items .btn{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+	background:#fff;
+	color: #9a1b21;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+.hezuo-logo img{
+	width: 100%;
+	margin: 0 auto;
+}
+.hezuo .content .img{
+	margin-left: 100px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/*//联系我们*/
+.contact p{
+	line-height: 25px;
+	margin-left: 20px;
+}
+.contact h3{
+	margin-left: 5px;
+	line-height: 40px;
+}
+.contact p.con-haiyu{
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.contact img{
+	margin-bottom: 30px;
+}
