@@ -37,10 +37,10 @@ $(document).ready(function(){
 	$(".btn").each(function(index,ele){
 		$(this).click(function(){
 			var _html=$(this).text()=="收起 ︽" ? "查看更多>>":"收起 ︽";
-			console.log($(this))
+			// console.log($(this))
 			$(this).text(_html);
 			$(".items").eq(index).toggleClass("items-height");
 		})
 	})
-
+	
 })//ready()

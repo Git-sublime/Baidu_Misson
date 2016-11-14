@@ -1,0 +1,21 @@
+.xiangqi{
+	padding: 0 15px 0 10px;
+	margin-bottom: 30px;
+}
+.xiangqi h3{
+	line-height: 40px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.xiangqi img{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.xiangqi p{
+	font-size: 12px;
+	line-height: 25px;
+}
+.trandition-active{
+	background-color: #c00;
+}

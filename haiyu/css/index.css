@@ -221,8 +221,8 @@
 	background-color: #eee;
 }
 .side.side3{
-	background: url(../images/icon2.png) no-repeat right center ;
-	padding-right: 65px;
+	background: url(../images/tea_03.png) no-repeat right center ;
+	/*padding-right: 65px;*/
 	background-color: #eee;
 }
 .side p{
@@ -237,33 +237,51 @@
 	font-size: 16px;
 }
 .teacher{
-	display: flex;
+	/*display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 	margin-right: 20px;
 	margin-bottom: 40px;
+	height: 100px;
+	width: 200px;
+	/*overflow: hidden;*/
 }
-.teacher div{
+.teacher ul li a{
 	display: inline-block;
 	width: 100px;
-	/*height: 120px;*/
+	height: 100px;
+	float: left;
+}
+/*.teacher div{
+	display: inline-block;
+	width: 100px;
+	cursor: pointer;
+	transition: transform .2s;
+}
+.teacher div:hover{
+	transform: scale(1.1,1.1);
+	-webkit-transform:scale(1.1,1.1);
 }
 .teacher .head-img{
-	width: 90px;
-	height: 90px;
-	border: 5px solid #333;
+	width: 54px;
+	height: 54px;
+	border: 3px solid #333;
 	border-radius: 50%;
+	overflow: hidden;
 }
-.teacher .head-img.img1{
-	background: url(../images/teacher1.jpg);
+.teacher .head-img>img{
+	margin-top: -10px;
+}*/
+/*.teacher .head-img.img1{
+	background: url(../images/th1.jpg);
 	background-size: cover;
 	background-position: 50% 50%;	
 }
 .teacher .head-img.img2{
-	background: url(../images/teacher2.jpg);
+	background: url(../images/th2.jpg);
 	background-size: cover;
 	background-position: 50% 50%;	
-}
+}*/
 
 .history{	
 	margin-bottom: 30px;
@@ -344,7 +362,7 @@
 	overflow: hidden;
 }
 .hezuo .items p{
-	line-height: 22px;
+	line-height: 23px;
 	margin-left: 100px;
 }
 .items .content{
@@ -352,7 +370,8 @@
 }
 .items .btn{
 	width: 100px;
-	height: 30px;
+	height: 23px;
+	line-height: 23px;
 	position: absolute;
 	right: 10px;
 	bottom: 0;
@@ -361,6 +380,7 @@
 	border: none;
 	cursor: pointer;
 	outline: none;
+	font-size: 12px;
 }
 .hezuo-logo img{
 	width: 100%;
@@ -371,13 +391,6 @@
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
-
-
-
-
-
-
-
 
 /*//联系我们*/
 .contact p{
@@ -395,4 +408,27 @@
 }
 .contact img{
 	margin-bottom: 30px;
+}
+
+/*传统文化*/
+.xiangqi{
+	padding: 0 15px 0 10px;
+	margin-bottom: 30px;
+}
+.xiangqi h3{
+	line-height: 40px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+.xiangqi img{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.xiangqi p{
+	font-size: 12px;
+	line-height: 25px;
+}
+.trandition-active{
+	background-color: #c00;
 }
