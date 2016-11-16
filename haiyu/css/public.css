@@ -85,7 +85,7 @@ header{
 
 /*导航==============================*/
 nav{
-	height: 40px;
+	height: 50px;
 	background: url(../images/nav-bg_02.png);
 	background-size: cover;
 	background-position: 50%;
@@ -94,22 +94,35 @@ nav{
 	width: 20%;
 	float: left;
 	text-align: center;
+	height: 50px;
 }
-.nav li span{
+.nav li>span{
 	display: inline-block;
 	float: right;
 	color: #000;
-	line-height: 40px;
+	line-height: 50px;
 	font-size: 16px;
 }
 .nav li a{
-	display: inline-block;
+	display:block;
 	color: #ddd;
 	font-size: 16px;
-	line-height: 40px;
 	/*padding: 0 20px;*/
 }
-
+.nav li a span{
+	display: block;
+	line-height: 25px;
+	font-size:10px;
+	margin-top: -50px;
+	/*margin-top: -5px;*/
+}
+.nav li a span:nth-child(1){
+	font-size: 16px;
+	margin-top: 5px;
+}
+.nav li a span:nth-child(2){
+	margin-top: -5px;
+}
 
 /*底部==========================*/
 footer{

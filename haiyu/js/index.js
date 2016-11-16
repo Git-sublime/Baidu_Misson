@@ -1,5 +1,12 @@
 $(document).ready(function(){
-	var num=$("#img-roll").children("li").length;
+	bannerPic();//所有页面banner图滚动
+	information();//信息发布页面  展开收起按钮
+	teacherPic();//首页教室档案 头像滚动
+})//ready()
+
+//所有页面banner图滚动==================
+function bannerPic(){
+		var num=$("#img-roll").children("li").length;
 	//设置ul的宽度
 	$("#img-roll").width(function(){
 		var ulWidth=$(".center").width()*num;
@@ -32,15 +39,65 @@ $(document).ready(function(){
 			run();
 		},3000);
 	})
+}
 
-	//展开收起按钮
+//信息发布页面  展开收起按钮=================
+function information(){
 	$(".btn").each(function(index,ele){
 		$(this).click(function(){
-			var _html=$(this).text()=="收起 ︽" ? "查看更多>>":"收起 ︽";
+			var _html=($(this).text()=="收起 ︽" )? "查看更多>>":"收起 ︽";
 			// console.log($(this))
 			$(this).text(_html);
 			$(".items").eq(index).toggleClass("items-height");
 		})
 	})
-	
-})//ready()
+}
+
+//首页教室档案 头像滚动========================
+function teacherPic(){
+	tWidth=$(".teacher").find("li").eq(0).width();//第一个li的宽度
+	allW=$(".teacher").find("li").length;//获取滚动li的个数
+	$(".teacher ul").width(allW*tWidth+"px");//设置ul的宽度
+	var i=0;//定义全局i
+	function roll(){//滚动函数
+		if (i==-1) {
+			$(".teacher ul").css("marginLeft",-(allW-2)*tWidth+"px");
+			i=allW-3;
+		}
+		if (i==allW-1) {
+			$(".teacher ul").css("marginLeft",0);
+			i=1;
+		}
+		if (0<=i<allW-1) {
+			$(".teacher ul").animate({
+				marginLeft:-(tWidth*i)+"px",
+			})
+		}
+	}
+	//自动滚动
+	var Timer2=setInterval(function(){
+		i++;
+		roll();
+	},2000)
+	$(".teacher").hover(function(){
+		clearInterval(Timer2);
+	},function(){
+		Timer2=setInterval(function(){
+			i++;
+			roll();
+		},2000)
+	})
+	//左右查看按钮
+	$(".l-btn").click(function(){
+		if(!$(".teacher ul").is(":animated")){
+			i--;
+			roll();
+		}
+	})
+	$(".r-btn").click(function(){
+		if(!$(".teacher ul").is(":animated")){
+			i++;
+			roll();
+		}
+	})
+}
