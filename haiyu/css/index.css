@@ -261,7 +261,7 @@
 	font-size: 0;
 }
 .teacher{
-	width: 200px;
+	width: 190px;
 	height: 70px;
 	padding: 15px 0;
 	overflow: hidden;
@@ -272,7 +272,7 @@
 	font-size: 0;
 }
 .teacher ul li{
-	width: 100px;
+	width: 95px;
 	height: 70px;
 	float: left;
 }
@@ -322,23 +322,6 @@
 .teacher .th-btn:hover{
 	background-color: #ccc;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*.teacher div{
 	display: inline-block;
@@ -520,4 +503,17 @@
 }
 .trandition-active{
 	background-color: #c00;
+}
+
+
+/*iframe窗口页面部分*/
+.iframe{
+	width: 100%;
+	height: 1000px;
+	/*border: 1px solid #c00;*/
+}
+.iframe iframe{
+	width: 100%;
+	height: 100%;
+	border: none;
 }

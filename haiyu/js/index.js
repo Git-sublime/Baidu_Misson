@@ -1,7 +1,8 @@
 $(document).ready(function(){
-	bannerPic();//所有页面banner图滚动
-	information();//信息发布页面  展开收起按钮
-	teacherPic();//首页教室档案 头像滚动
+	bannerPic();//所有页面banner图滚动--8
+	information();//信息发布页面  展开收起按钮--45
+	teacherPic();//首页教室档案 头像滚动--57
+	dropdown();//导航菜单下拉--106
 })//ready()
 
 //所有页面banner图滚动==================
@@ -99,5 +100,12 @@ function teacherPic(){
 			i++;
 			roll();
 		}
+	})
+}
+
+//导航菜单下拉
+function dropdown(){
+	$(".nav").children("li").hover(function(){
+		$(this).find("ul").slideToggle(200);
 	})
 }

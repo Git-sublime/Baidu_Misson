@@ -9,6 +9,7 @@ a{text-decoration:none;}
 /*清除浮动*/
 .clearfix:after{content:"";display:block;clear:both;}
 .clearfix{zoom:1;}
+html{min-width: 1000px;}
 input{
 	outline: none;
 }
@@ -95,26 +96,25 @@ nav{
 	float: left;
 	text-align: center;
 	height: 50px;
+	position: relative;
 }
 .nav li>span{
 	display: inline-block;
 	float: right;
 	color: #000;
 	line-height: 50px;
-	font-size: 16px;
+	font-size: 20px;
 }
 .nav li a{
 	display:block;
 	color: #ddd;
 	font-size: 16px;
-	/*padding: 0 20px;*/
 }
 .nav li a span{
 	display: block;
 	line-height: 25px;
 	font-size:10px;
 	margin-top: -50px;
-	/*margin-top: -5px;*/
 }
 .nav li a span:nth-child(1){
 	font-size: 16px;
@@ -123,6 +123,36 @@ nav{
 .nav li a span:nth-child(2){
 	margin-top: -5px;
 }
+
+/*下拉*/
+/*.nav li:hover ul{
+	height: auto;
+}*/
+.nav li ul{
+	width: 200px;
+	z-index: 10;
+	position: absolute;
+	top: 50px;
+	left: -4px;
+	background: #444;
+	/*height: 0;*/
+	display: none;
+	overflow: hidden;
+}
+.nav li ul li{
+	height: 40px;
+	width: 100%;
+	display: block;
+	background: url(../images/nav-bg_03.jpg);
+	background-size: cover;
+}
+.nav li ul li:last-child{
+	background: url(../images/nav-bg_06.png);
+}
+.nav li ul li a{
+	line-height: 40px;
+}
+
 
 /*底部==========================*/
 footer{
