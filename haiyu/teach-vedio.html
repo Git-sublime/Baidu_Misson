@@ -5,6 +5,7 @@
 	<title>嗨语-对外汉语之家教学平台</title>
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/jScrollbar.jquery.css">
 </head>
 <body>
 	<!-- 头部 -->
@@ -36,24 +37,24 @@
 
 			<li>
 				<span>|</span>
-				<a href="vedio.html">
+				<a href="javascript:void(0)">
 					<span class="zw">教学资源</span>
 					<span>Teaching Resources</span>
 				</a>
 				<ul>
-					<li><a href="vedio.html">教学视频</a></li>
-					<li><a href="vedio.html">教学文档</a></li>
+					<li><a href="teach-vedio.html">教学视频</a></li>
+					<li><a href="teach-file.html">教学文件</a></li>
 				</ul>
 			</li>
 			<li>
 				<span>|</span>
-				<a href="info.html">
+				<a href="javascript:void(0)">
 					<span class="zw">信息发布</span>
 					<span>Team Profile</span>
 				</a>
 				<ul>
-					<li><a href="vedio.html">教学视频</a></li>
-					<li><a href="vedio.html">教学文档</a></li>
+					<li><a href="info-jigou.html">合作机构</a></li>
+					<li><a href="info-zhaopin.html">教师招聘</a></li>
 				</ul>
 			</li>
 			<li>
@@ -80,8 +81,7 @@
 				<!-- 左边窗口 -->
 				<div class="vedio">
 					<div class="iframe">
-						<iframe src="http://bluewolfrain.cn:8080/chinese/">
-							
+						<iframe src="vedio.html" scrolling="auto" class="jScrollbar">	
 						</iframe>
 					</div>
 				</div>
@@ -103,51 +103,93 @@
 						</a>
 					</div>
 
-					<div class="caption">
-						<h3>讲义</h3>
-						<a href="javascript:void(0)">查看更多&gt;&gt;</a>
-					</div>
-					<div class="history clearfix">
-						<a href="javascript:void(0)" class="clearfix">
-							<p>第三课：你今天早上几点起床</p>
-						</a>
-						<a href="javascript:void(0)" class="clearfix">
-							<p>第四课：我在餐厅吃饭</p>
-						</a>
-						<a href="javascript:void(0)" class="clearfix">
-							<p>第五课：我没去过九寨沟</p>
-						</a>
-					</div>
-
-					<div class="caption">
-						<h3>教案</h3>
-						<a href="javascript:void(0)">查看更多&gt;&gt;</a>
-					</div>
-					<div class="history clearfix">
-						<a href="javascript:void(0)" class="clearfix">
-							<p>第三课：你今天早上几点起床</p>
-						</a>
-						<a href="javascript:void(0)" class="clearfix">
-							<p>第四课：我在餐厅吃饭</p>
-						</a>
-						<a href="javascript:void(0)" class="clearfix">
-							<p>第五课：我没去过九寨沟</p>
-						</a>
-					</div>
-
+					<!-- 教材 -->
 					<div class="caption">
 						<h3>教材</h3>
-						<a href="javascript:void(0)">查看更多&gt;&gt;</a>
+						<a href="javascript:void(0)" class="seeMore">查看更多 ▼</a>
 					</div>
-					<div class="history clearfix">
+					<div class="history hisMore clearfix" id="file">
 						<a href="javascript:void(0)" class="clearfix">
-							<p>第三课：你今天早上几点起床</p>
+							<p>第一课：我刚下飞机就看见你了</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第二课：这件衣服比那件衣服好看</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第三课：你今天早上几点起床？</p>
 						</a>
 						<a href="javascript:void(0)" class="clearfix">
 							<p>第四课：我在餐厅吃饭</p>
 						</a>
 						<a href="javascript:void(0)" class="clearfix">
 							<p>第五课：我没去过九寨沟</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第六课：你平常喜欢干什么？</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第七课：来我家吃饭吧</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第八课：边喝啤酒边看世界杯</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第九课：我们周末去运动吧</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第十课：给你带来了一本词典</p>
+						</a>
+					</div>
+					
+					<!-- 教案 -->
+					<div class="caption">
+						<h3>教案</h3>
+						<a href="javascript:void(0)" class="seeMore">查看更多 ▼</a>
+					</div>
+					<div class="history hisMore clearfix" id="file">
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第三课：你今天早上几点起床？</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第四课：我在餐厅吃饭</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第五课：我没去过九寨沟</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第六课：你平常喜欢干什么？</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第七课：来我家吃饭吧</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第八课：边喝啤酒边看世界杯</p>
+						</a>
+					</div>
+					
+					<!-- 讲义 -->
+					<div class="caption">
+						<h3>讲义</h3>
+						<a href="javascript:void(0)" class="seeMore">查看更多 ▼</a>
+					</div>
+					<div class="history hisMore clearfix" id="file">
+						<a href="javascript:void(0)" class="clearfix">
+							<p>ppt第三课：你今天早上几点起床？</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>ppt第四课：我在餐厅吃饭</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>ppt第五课：我没去过九寨沟</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>ppt第六课：你平常喜欢干什么？</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>ppt第七课：来我家吃饭吧</p>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>ppt第八课：边喝啤酒边看世界杯</p>
 						</a>
 					</div>
 					
@@ -169,7 +211,7 @@
 	<footer>
 		<ul>
 			<li><span>技术支持：</span><a href="http://git-sublime.github.io/test/weily">微力实验室</a></li>
-			<li><span>联系电话：</span><a href="javascript:void(0)">18228075165</a></li>
+			<li><span>联系电话：</span><a href="javascript:void(0)">18408243115</a></li>
 			<li><span>邮箱地址：</span><a href="javascript:void(0)">haiyu-dwhyzj@foxmail.com</a></li>
 		</ul>
 		<p>&copy;成都市郫县红光镇西华大学对外汉语之家<a href="#">www.haiyu.com</a></p>
@@ -177,4 +219,12 @@
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery-mousewheel.js"></script>
+<script type="text/javascript" src="js/jScrollbar.jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("iframe").jScrollbar();
+	})
+</script>
 </html>

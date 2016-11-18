@@ -119,15 +119,17 @@
 .vedio-box{
 	width: 100%;
 	display: flex;
-	justify-content:space-around;
+	justify-content:left;
 	flex-wrap:wrap;
 }
-.vedio .item{
+.vedio-box .item{
 	display: inline-block;
-	 width: 300px;
-	 height: auto;
-	 padding-right: 17px;
-	 margin-bottom: 30px;    
+	width: 300px;
+	height: auto;
+	margin-left: 17px;
+	margin-bottom: 20px;
+	background-color: #eee;
+	border-top-right-radius: 20px;
 }
 .vedio h3{
 	text-indent: 40px;
@@ -135,13 +137,22 @@
 	color: #333;
 	font-size: 14px;
 	background: url(../images/yun_03.png) no-repeat left center;
+	background-color: #fff;
 }
-.vedio .item .img{
+.vedio-box h3{
+	text-indent: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 14px;
+	background: url(../images/yun_03.png) no-repeat left center;
+	background-color: #fff;
+}
+.vedio-box .item .img{
 	position: relative;
 	height: 160px;
 	overflow: hidden;
 }
-.vedio .item .img a{
+.vedio-box .item .img a{
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -156,7 +167,13 @@
 	-o-transition: opacity .2s;
 	-moz-transition: opacity .2s;
 }
-.vedio .item .img a img{
+.vedio-box .item .img img{
+	-webkit-transition: transform .2s;
+	-ms-transition: transform .2s;
+	-o-transition: transform .2s;
+	-moz-transition: transform .2s;
+}
+.vedio-box .item .img a img{
 	display: block;
 	width: 40px;
 	margin: 0 auto;
@@ -164,23 +181,26 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
-.vedio .item .img:hover a{
+.vedio-box .item .img:hover a{
 	opacity: 1;
 }
-.vedio .item>p{
+.vedio-box .item>p{
 	margin-top: 10px;
 	line-height: 20px;
 	color: #333;
+	text-indent: 5px;
 }
-.vedio .item div p{
+.vedio-box .item div p{
 	line-height: 30px;
 	color: #333;
+	text-indent: 5px;
 }
-.vedio .item p.lx{
+.vedio-box .item p.lx{
 	float: left;
 }
-.vedio .item p.zj{
+.vedio-box .item p.zj{
 	float: right;
+	margin-right: 5px;
 }
 /*侧边栏============================*/
 .side-right{
@@ -215,7 +235,7 @@
 	width: 66px;
 }
 .caption a:hover{
-	text-decoration: underline;
+	color: #9a1b21;
 }
 .side{
 	margin: 20px 20px 0 0;
@@ -237,7 +257,6 @@
 }
 .side.side3{
 	background: url(../images/tea_03.png) no-repeat right center ;
-	/*padding-right: 65px;*/
 	background-color: #eee;
 }
 .side p{
@@ -360,10 +379,13 @@
 	overflow: hidden;
 	width: 100%;
 }
+.hisMore{
+	height: 75px;
+}
 .history p{
-	width: 65%;
+	width: 67%;
 	float: left;
-	text-indent: 10px;
+	/*text-indent: 10px;*/
 	color: #555;
 	line-height: 25px;
 	overflow: hidden;
@@ -406,6 +428,18 @@
 	margin-left: 20px;
 	margin-top: 20px;
 	margin-bottom: 30px;
+}
+.jigou table{
+	width: 500px;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+}
+.jigou table tr td{
+	border: 1px solid #ccc;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+	text-align: center;
 }
 
 /*视频资源*/
@@ -510,10 +544,73 @@
 .iframe{
 	width: 100%;
 	height: 1000px;
-	/*border: 1px solid #c00;*/
 }
 .iframe iframe{
 	width: 100%;
 	height: 100%;
 	border: none;
+}
+#file>a>p{
+	width: 100%;
+}
+
+
+/*vedio页面分页按钮*/
+.page{
+	margin: 20px 0 40px;
+	display: flex;
+	text-align: center;
+	flex-wrap: nowrap;
+	justify-content: center;
+	font-size: 12px;
+}
+.page>a{
+	display: inline-block;
+	padding: 0 20px;
+	border: 1px solid #ccc;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 5px;
+	margin-right: 20px;
+	color: #444;
+	background: #eee;
+}
+.page>span{
+	line-height: 28px;
+}
+.page>a:hover{
+	background: #9abfe2;
+	border: 1px solid #9abfe2;
+	color: #222;
+}
+.page-input{
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+	margin-left: 10px;
+}
+.page-input>input{
+	width: 50px;
+	height: 100%;
+	border: none;
+	text-indent: 5px;
+	font-size: 12px;
+}
+.page-input>a{
+	width: 40px;
+	height: 100%;
+	float: right;
+	background: #ccc;
+	color: #333;
+}
+
+
+/*招聘页面*/
+.zhaopin h3{
+	margin-left: 5px;
+}
+.zhaopin p{
+	line-height: 25px;
+	padding-left: 20px;
+	padding-right: 10px;
 }
