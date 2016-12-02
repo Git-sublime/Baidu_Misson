@@ -5,20 +5,23 @@
 	<title>嗨语-对外汉语之家教学平台</title>
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/mF_fancy.css">
+    <link rel="Shortcut Icon" href="images/ico.png">
 </head>
 <body>
 	<!-- 头部 -->
 	<header>
 		<div class="center clearfix">
-			<div class="logo-box"></div>
+			<div class="logo-box"><img src="images/logo.png"></div>
 			<div class="login">
-				<a href="javascript:void(0)">登陆</a>
-				<span>/</span>
+				<a href="javascript:void(0)">学员登录</a>
+				<span>&nbsp;|&nbsp;</span>
 				<a href="javascript:void(0)">注册</a>
 				<!-- <div class="search">
 					<input type="text" placeholder="搜索"></input>
 					<a href="javascript:void(0)"></a>
 				</div> -->
+				<a href="javascript:void(0)" class="gengduo"></a>
 			</div>
 		</div>
 	</header>
@@ -53,15 +56,19 @@
 				</a>
 				<ul>
 					<li><a href="info-jigou.html">合作机构</a></li>
-					<li><a href="info-zhaopin.html">教师招聘</a></li>
+					<li><a href="info-zhaopin.html">活动信息</a></li>
 				</ul>
 			</li>
 			<li>
 				<span>|</span>
-				<a href="about.html">
+				<a href="javascript:void(0)">
 					<span class="zw">关于嗨语</span>
 					<span>About Us</span>
 				</a>
+				<ul>
+					<li><a href="about-haiyu.html">机构介绍</a></li>
+					<li><a href="about-teacher.html">教师档案</a></li>
+				</ul>
 			</li>
 			<li>
 				<a href="contact.html">
@@ -76,43 +83,41 @@
 	<div class="main">
 		<div class="main-body center">
 			<!-- 轮播图 -->
-			<div class="roll">
-				<ul class="clearfix" id="img-roll">
-					<li>
-						<a href="javascript:void(0)">
-							<img src="images/banner3.jpg">
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)">
-							<img src="images/banner2_03.png">
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)">
-							<img src="images/banner1_07.png">
-						</a>
-					</li>
-				</ul>
-
-				<!-- <ul class="contorl-btn">
-					<li><a href="btn1"></a></li>
-					<li><a href="btn2"></a></li>
-					<li><a href="btn3"></a></li>
-				</ul> -->
+			<div id="boxID">
+				<div class="loading"><img src="img/loading.gif" alt="请稍候..." /></div>
+				<div class="pic">
+					<ul class="clearfix">
+						<li>
+							<a href="about-haiyu.html">
+								<img src="images/banner2_03.png" title="诚信为本">
+							</a>
+						</li>
+						<li>
+							<a href="teach-vedio.html">
+								<img src="images/banner1_07.png" title="天行健">
+							</a>
+						</li>
+						<li>
+							<a href="contact.html">
+								<img src="images/banner3.jpg" title="汉语之家">
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
+			
 			<div class="juanzhan"></div>
 			<!-- 主体正文部分 -->
 			<div class="article clearfix">
 				<div class="vedio">
 					<div class="contact">
-						<h3>联系我们</h3>
+						<h3 style="font-size: 16px;">联系我们</h3>
 						<img src="images/contact.jpg" width="100%;">
-						<p class="con-haiyu">嗨语-对外汉语之家教学平台</p>
-						<p>地址：四川省成都市郫县红光镇西华大学对外汉语之家</p>
+						<p class="con-haiyu">嗨语-对外汉语之家教学资源平台</p>
+						<p>地址：四川省成都市郫县红光镇西华大学嗨语-对外汉语之家教学资源平台</p>
 						<p>联系电话：18408243115</p>
 						<p>QQ：2044369821</p>
-						<p>E-mail：haiyu-dwhyzj@foxmail.com</p>
+						<p>E-mail：haiyuchinese@foxmail.com</p>
 						<p>微信公众平台：</p>
 						<img src="images/erweima.jpg" width="40%">
 					</div>
@@ -133,17 +138,101 @@
 							<p>传统美食</p>
 							<p>中华传统美食给你舌尖上的诱惑</p>
 						</a>
-					</div>			
+					</div>
+					
+					<!-- 教师档案 -教师头像 -->
+					<div class="caption">
+						<h3>教师档案</h3>
+						<a href="javascript:void(0)">查看更多 ▼</a>
+					</div>
+					<div class="teacher-pic">
+						<div class="teacher">
+							<ul class="clearfix">
+								<li><a href="about-teacher.html#ll">
+									<div class="pic">
+										<img src="images/th1.jpg">
+									</div>
+									<button>刘林</button>
+								</a></li>
+								<li><a href="about-teacher.html#zyr">
+									<div class="pic">
+										<img src="images/th2.jpg">
+									</div>
+									<button>赵佑瑞</button>
+								</a></li>
+								<li><a href="about-teacher.html#yf">
+									<div class="pic">
+										<img src="images/th3.jpg">
+									</div>
+									<button>杨帆</button>
+								</a></li>
+								<li><a href="about-teacher.html#nmz">
+									<div class="pic">
+										<img src="images/th4.jpg">
+									</div>
+									<button>廖梦铮</button>
+								</a></li>
+								<li><a href="about-teacher.html#xzy">
+									<div class="pic">
+										<img src="images/th5.jpg">
+									</div>
+									<button>谢章元</button>
+								</a></li>
+								
+								<!--添加教师照片-->
 
-				<!-- 	<div class="caption">
+								<li><a href="about-teacher.html#ll">
+									<div class="pic">
+										<img src="images/th1.jpg">
+									</div>
+									<button>刘林</button>
+								</a></li>
+								<li><a href="about-teacher.html#zyr">
+									<div class="pic">
+										<img src="images/th2.jpg">
+									</div>
+									<button>赵佑瑞</button>
+								</a></li>
+							</ul>
+
+							<div class="l-btn th-btn"></div>
+							<div class="r-btn th-btn"></div>
+						</div>
+					</div>
+					
+					<!-- 历史观看记录 -->
+					<!-- <div class="caption">
+						<h3>历史观看记录</h3>
+						<a href="javascript:void(0)" class="seeMore">查看更多 ▼</a>
+					</div>
+					<div class="history clearfix hisMore">
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第七课：来我家吃饭吧</p><span>[2016.11.9]</span>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第六课：你平时喜欢做什么</p><span>[2016.11.8]</span>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第五课：我没去过九寨沟</p><span>[2016.11.8]</span>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第四课：我在餐馆吃饭</p><span>[2016.11.7]</span>
+						</a>
+						<a href="javascript:void(0)" class="clearfix">
+							<p>第三课：你今天早上几点起床的？</p><span>[2016.11.7]</span>
+						</a>
+					</div> -->
+					
+					<!-- 联系我们 -->
+					<div class="caption">
 						<h3>联系我们</h3>
 					</div>
 					<div class="contactus clearfix">
-						<p>TEL：18228075165</p>
+						<p>TEL：18408243115</p>
 						<p>QQ：2044369821</p>
 						<p>微信关注我们：</p>
 						<img src="images/erweima.jpg" width="60%">
-					</div> -->
+					</div>
 				</div><!-- side-right -->
 			</div>
 		</div><!-- main-body -->
@@ -151,13 +240,15 @@
 
 	<footer>
 		<ul>
-			<li><span>技术支持：</span><a href="http://git-sublime.github.io/test/weily">微力实验室</a></li>
+			<li><span>技术支持：</span><a href="http://lzsfe.cn/weily">微力实验室</a></li>
 			<li><span>联系电话：</span><a href="javascript:void(0)">18408243115</a></li>
-			<li><span>邮箱地址：</span><a href="javascript:void(0)">haiyu-dwhyzj@foxmail.com</a></li>
+			<li><span>邮箱地址：</span><a href="javascript:void(0)">haiyuchinese@foxmail.com</a></li>
 		</ul>
-		<p>&copy;成都市郫县红光镇西华大学对外汉语之家<a href="#">www.haiyu.com</a></p>
+		<p>&copy;四川省成都市嗨语-对外汉语之家教学资源平台<a href="#">www.haiyuchinese.cn</a></p>
 	</footer>
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/myfocus-2.0.4.min.js"></script>
+<script type="text/javascript" src="js/mF_fancy.js"></script>
 </html>

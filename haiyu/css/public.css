@@ -26,34 +26,35 @@ header{
 	background: url(../images/header-bg_02.jpg);
 }
 .logo-box{
-	width: 390px;
-	height: 70px;
-	margin-top: 40px;
 	float: left;
-	background: url(../images/logo1_03.png);
-	background-position: 50% 50%;
-	background-size: cover;
-	margin-left: 10px;
+	margin-top: 30px;
 }
 .login{
-	width: 200px;
-	height: 70px;
 	float: right;
-	margin-top: 80px;
+	margin-top: 90px;
 	text-align: right;
 	margin-right: 10px;
 	color: #333;
+	background: #9b1e26;
+	padding: 0 40px 0 10px;
+	border-radius: 3px;
+	position: relative;
+	overflow: hidden;
 }
 .login span,
 .login>a{
-	color: #9b1e26;
-	font-weight: bold;
+	color: #fff;
 	font-size: 14px;
-	line-height: 40px;
+	line-height: 25px;
 }
-.login>a:hover{
-	/*text-decoration: underline;*/
-	border-bottom: 2px solid #9b1e26;
+.login>a.gengduo{
+	position: absolute;
+	width: 30px;
+	height: 25px;
+	right: 0;
+	top: 0;
+	background: url(../images/login.png) no-repeat center center;
+	background-color: #830008;
 }
 .search{
 	width: 100%;
@@ -116,6 +117,7 @@ nav{
 	line-height: 25px;
 	font-size:10px;
 	margin-top: -50px;
+	text-transform: capitalize;
 }
 .nav li a span:nth-child(1){
 	font-size: 16px;

@@ -5,20 +5,23 @@
 	<title>嗨语-对外汉语之家教学平台</title>
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/jScrollbar.jquery.css">
+    <link rel="Shortcut Icon" href="images/ico.png">
 </head>
 <body>
 	<!-- 头部 -->
 	<header>
 		<div class="center clearfix">
-			<div class="logo-box"></div>
+			<div class="logo-box"><img src="images/logo.png"></div>
 			<div class="login">
-				<a href="javascript:void(0)">登陆</a>
-				<span>/</span>
+				<a href="javascript:void(0)">学员登录</a>
+				<span>&nbsp;|&nbsp;</span>
 				<a href="javascript:void(0)">注册</a>
 				<!-- <div class="search">
 					<input type="text" placeholder="搜索"></input>
 					<a href="javascript:void(0)"></a>
 				</div> -->
+				<a href="javascript:void(0)" class="gengduo"></a>
 			</div>
 		</div>
 	</header>
@@ -53,15 +56,19 @@
 				</a>
 				<ul>
 					<li><a href="info-jigou.html">合作机构</a></li>
-					<li><a href="info-zhaopin.html">教师招聘</a></li>
+					<li><a href="info-zhaopin.html">活动信息</a></li>
 				</ul>
 			</li>
 			<li>
 				<span>|</span>
-				<a href="about.html">
+				<a href="javascript:void(0)">
 					<span class="zw">关于嗨语</span>
 					<span>About Us</span>
 				</a>
+				<ul>
+					<li><a href="about-haiyu.html">机构介绍</a></li>
+					<li><a href="about-teacher.html">教师档案</a></li>
+				</ul>
 			</li>
 			<li>
 				<a href="contact.html">
@@ -211,13 +218,21 @@
 
 	<footer>
 		<ul>
-			<li><span>技术支持：</span><a href="http://git-sublime.github.io/test/weily">微力实验室</a></li>
+			<li><span>技术支持：</span><a href="http://lzsfe.cn/weily">微力实验室</a></li>
 			<li><span>联系电话：</span><a href="javascript:void(0)">18408243115</a></li>
-			<li><span>邮箱地址：</span><a href="javascript:void(0)">haiyu-dwhyzj@foxmail.com</a></li>
+			<li><span>邮箱地址：</span><a href="javascript:void(0)">haiyuchinese@foxmail.com</a></li>
 		</ul>
-		<p>&copy;成都市郫县红光镇西华大学对外汉语之家<a href="#">www.haiyu.com</a></p>
+		<p>&copy;四川省成都市嗨语-对外汉语之家教学资源平台<a href="#">www.haiyuchinese.cn</a></p>
 	</footer>
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery-mousewheel.js"></script>
+<script type="text/javascript" src="js/jScrollbar.jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("iframe").jScrollbar();
+	})
+</script>
 </html>

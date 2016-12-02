@@ -4,6 +4,15 @@ $(document).ready(function(){
 	teacherPic(); //首页教室档案 头像滚动--57
 	dropdown();   //导航菜单下拉--106
 	seeMore();    //侧边栏 “查看更多>>”--114
+	setup();
+
+	myFocus.set({//myfocus轮播效果
+			id:'boxID',
+			pattern:'mF_fancy',
+			time:3,
+			width:1000,
+			height:330,
+		});
 })
 
 //所有页面banner图滚动==================
@@ -11,20 +20,14 @@ function bannerPic(){
 	var num=$("#img-roll").children("li").length;
 	//设置ul的宽度
 	$("#img-roll").width(function(){
-		var ulWidth=$(".center").width()*num;
+		var ulWidth=$("#img-roll").children("li").eq(0).width()*num;
 		return ulWidth;
 	})
-	//设置li的宽度
-	$("#img-roll").children("li").width(function(){
-		var liWidth=$(".center").width();
-		return liWidth;
-	})
-	//定义滚动函数
 	function run(){
-		var cenWidth=$(".center").width();
+		var cenWidth=$("#img-roll").children("li").eq(0).width();
 		$("#img-roll").animate({
 			marginLeft:-cenWidth+"px"
-		},700,function(){
+		},6000,function(){
 			$("#img-roll").children("li").eq(0).appendTo("#img-roll");
 			$("#img-roll").css("marginLeft",0);
 		})
@@ -32,14 +35,14 @@ function bannerPic(){
 	//设置计时器调用滚动函数
 	var Timer=setInterval(function(){
 			run();
-		},3000);
+		},0);
 	//鼠标滑过暂停
 	$(".roll").hover(function(){
 		clearInterval(Timer)
 	},function(){
 		Timer=setInterval(function(){
 			run();
-		},3000);
+		},0);
 	})
 }
 
@@ -107,7 +110,7 @@ function teacherPic(){
 //导航菜单下拉==========================
 function dropdown(){
 	$(".nav").children("li").hover(function(){
-		$(this).find("ul").slideToggle(200);
+		$(this).find("ul").slideToggle(100);
 	})
 }
 
@@ -123,4 +126,14 @@ function seeMore(){
 			$(".history").eq(index).toggleClass("hisMore");
 		})
 	})	
+}
+
+function setup(){
+	$(".setup ul>li a").each(function(index){
+		$(this).click(function(){
+			if(!$(".setup ul>li ul").is(":animated")){
+				$(".setup ul>li").eq(index).children("ul").slideToggle(150);
+			}
+		})
+	})
 }

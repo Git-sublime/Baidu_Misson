@@ -5,13 +5,12 @@
 	overflow: hidden;
 	position: relative;
 }
+#img-roll{
+	height: 100%;
+}
 #img-roll li{
 	float: left;
 }
-#img-roll li a img{
-	width: 100%;
-}
-
 .roll .contorl-btn{
 	position: absolute;
 	bottom: 20px;
@@ -52,8 +51,121 @@
 	background: #fff;
 	padding-top: 20px;
 }
+
+/*主页合作机构*/
+.art-hezuo{
+	width: 100%;
+	/*background: #ccc;*/
+}
+.hz{
+	height: 110px;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #ccc
+}
+.hz-img{
+	width: 30%;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #eee;
+}
+.hz-img img{
+	width: 50%;
+	display: block;
+	margin-left: 5%;
+	margin-top: 10px;
+	float: left;
+}
+.hz-img .hz-caption{
+	width: 45%;
+	float: left;
+	padding-top: 20px;
+	/*background: #ccc;*/
+	text-align: center;
+}
+.hz-img .hz-caption p{
+	font-size: 16px;
+	color: #b76d22;
+}
+.hz-img .hz-caption a{
+	display: inline-block;
+	background: #b76d22;
+	color: #eee;
+	border-radius: 3px;
+	padding: 0 10px;
+	margin-top: 10px;
+	height: 18px;
+	line-height: 15px;
+}
+.hz-content{
+	width: 65%;
+	float: left;
+	height: 100px;
+	overflow: hidden;
+	padding-top: 10px;
+}
+.hz-content p{
+	line-height: 20px;
+	padding-left: 20px;
+}
+.art-about{
+	width: 100%;
+	height: 300px;
+	/*background: #ccc;*/
+	display: flex;
+	justify-content: space-around;
+}
+.art-about .abt{
+	width: 30%;
+	border: 3px solid #9a1b21;
+	margin-top: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.art-about .abt .h4{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	background: #9a1b21;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+}
+.art-about .abt .abt-p{
+	height: 234px;
+}
+.art-about .abt .p1{
+	background: url(../images/art-about1.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.art-about .abt .p2{
+	background: url(../images/art-about2.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.art-about .abt .p3{
+	background: url(../images/art-about3.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.art-about .abt .p{
+	padding: 0 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	background: rgba(255,255,255,.5);
+}
+.art-about .abt p{
+	height: 220px;
+	overflow: hidden;
+	line-height: 20px;
+	text-indent: 2em;
+	color: #000;
+}
+
+
 .vedio{
-	width: 71%;
+	width: 660px;
 	float: left;
 	margin-bottom: 30px;
 	overflow: hidden;
@@ -63,7 +175,9 @@
 .vedio h2{
 	float: left;
 	text-indent: 10px;
-	line-height: 50px;
+	line-height: 34px;
+	margin-top: 8px;
+	background: #eee;
 	color: #9a1b21;
 	overflow: hidden;
 	white-space: nowrap;
@@ -71,38 +185,22 @@
 .vedio a.more{
 	float: left;
 	text-indent: 20px;
-	margin-top: 16px;
-	padding-right: 15px;
-	background: url(../images/more_07.png) no-repeat right center;
+	margin-top: 8px;
+	padding-right: 30px;
+	background: url(../images/more_07.png) no-repeat 58px 11px;
 	font-size: 16px;
 	color: #666;
 	overflow: hidden;
 	white-space: nowrap;
+	height: 34px;
+	line-height: 34px;
+	border-top-right-radius: 17px;
+	border-bottom-right-radius: 17px;
+	background-color: #eee;
 }
 .vedio .more:hover{
 	color: #9a1b21;
 }
-/*.vedio ul{
-	position: absolute;
-	bottom: -10px;
-	left: 50%;
-	margin-left: -100px;
-	text-align: center;
-	width: 200px;
-}
-.vedio ul li{
-	padding: 3px 10px;
-	border: 1px solid #ccc;
-	display: inline-block;
-	border-radius: 3px;
-	cursor: pointer;
-	margin-bottom: 10px;
-}
-.vedio ul li.more{
-	border: none;
-}*/
-
-
 .module-video .video-wrap, .module-video .video-wrap-outer {
     width: 100%;
     height: 480px;
@@ -114,13 +212,14 @@
     zoom: 1;
 }
 
-
-
 .vedio-box{
 	width: 100%;
-	display: flex;
-	justify-content:left;
-	flex-wrap:wrap;
+}
+.vedio-box .vedio-b{
+	width:630px;
+	margin-left: 15px;
+	height: 280px;
+	overflow: hidden;
 }
 .vedio-box .item{
 	display: inline-block;
@@ -136,6 +235,22 @@
 	line-height: 40px;
 	color: #333;
 	font-size: 14px;
+	background: url(../images/yun_03.png) no-repeat left center;
+	background-color: #fff;
+}
+.zhaopin h3{
+	text-indent: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 14px;
+	background: url(../images/yun_03.png) no-repeat left center;
+	background-color: #fff;
+}
+.contact h3{
+	text-indent: 40px;
+	line-height: 40px;
+	color: #333;
+	font-size: 16px;
 	background: url(../images/yun_03.png) no-repeat left center;
 	background-color: #fff;
 }
@@ -289,7 +404,7 @@
 .teacher ul{
 	height: 90px;
 	font-size: 0;
-}
+} 
 .teacher ul li{
 	width: 95px;
 	height: 105px;
@@ -448,12 +563,12 @@
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
-.jigou table{
+table{
 	width: 95%;
 	margin-left: 15px;
 	border: 1px solid #ccc;
 }
-.jigou table tr td{
+table tr td{
 	border: 1px solid #ccc;
 	height: 30px;
 	line-height: 30px;
@@ -521,15 +636,17 @@
 .contact p{
 	line-height: 25px;
 	margin-left: 20px;
+	font-size: 14px;
 }
 .contact h3{
 	margin-left: 5px;
 	line-height: 40px;
 }
 .contact p.con-haiyu{
-	color: #000;
+	color: #222;
 	font-weight: bold;
 	margin-bottom: 10px;
+	font-size: 16px;
 }
 .contact img{
 	margin-bottom: 30px;
@@ -562,7 +679,7 @@
 /*iframe窗口页面部分*/
 .iframe{
 	width: 100%;
-	height: 800px;
+	height: 860px;
 }
 .iframe iframe{
 	width: 100%;
@@ -627,6 +744,7 @@
 /*招聘页面*/
 .zhaopin h3{
 	margin-left: 5px;
+	border-bottom: solid 2px #ccc;
 }
 .zhaopin p{
 	line-height: 25px;
@@ -642,6 +760,9 @@
 	height: 800px;
 	background: #eee;
 }
+.setup ul li{
+	border-top: 1px dotted #ccc;
+}
 .setup ul li a{
 	display: block;
 	height: 40px;
@@ -649,7 +770,6 @@
 	padding-left: 50px;
 	color: #000;
 	font-size: 14px;
-	border-bottom: 1px dotted #ccc;
 }
 .setup ul li a.shezhi{
 	font-weight: bold;
@@ -657,4 +777,59 @@
 	line-height: 50px;
 	font-size: 18px;
 	padding-left: 30px;
+	background: #fff;
+}
+.setup ul li:hover{
+	background: #fff;
+}
+.setup ul li a:hover{
+	font-weight: bold;
+}
+.setup ul li ul{
+	display: none;
+	background: #eee;
+}
+.setup ul li ul li{
+	padding-left: 20px;
+}
+.set-iframe{
+	margin-top: 20px;
+	width: 730px;
+	float: left;
+	margin-left: 10px;
+	height: 800px;
+}
+.set-iframe iframe{
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/*教师简介*/
+.Teacher{
+	width: 100%;
+	/*height: 200px;*/
+	padding: 20px 0;
+	border-top: 1px solid #ccc;
+}
+.l-img{
+	width: 25%;
+	float: left;
+	height: 100%;
+}
+.l-img img{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+.r-content{
+	width: 72%;
+	float: right;
+	height: 100%;
+	/*background: #ddd;*/
+}
+
+/*关于嗨语---机构介绍*/
+#about-p p{
+	margin-left: 10px;
 }
