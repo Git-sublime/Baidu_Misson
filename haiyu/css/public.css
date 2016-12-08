@@ -156,7 +156,10 @@ nav{
 	line-height: 40px;
 }
 
-
+.ad{
+	height: 330px;
+	overflow: hidden;
+}
 /*底部==========================*/
 footer{
 	height: 100px;
